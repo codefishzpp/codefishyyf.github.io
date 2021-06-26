@@ -18,4 +18,43 @@
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 ]]></content>
   </entry>
+  <entry>
+    <title>hexo主题next7.8版本美化</title>
+    <url>/2021/06/26/hexo%E4%B8%BB%E9%A2%98next7-8%E7%89%88%E6%9C%AC%E7%BE%8E%E5%8C%96/</url>
+    <content><![CDATA[<h1 id="1-设置博主个人信息以及语言"><a href="#1-设置博主个人信息以及语言" class="headerlink" title="1.设置博主个人信息以及语言"></a>1.设置博主个人信息以及语言</h1><h3 id="1-1-在博客配置文件中修改Site"><a href="#1-1-在博客配置文件中修改Site" class="headerlink" title="1.1 在博客配置文件中修改Site"></a>1.1 在博客配置文件中修改Site</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">title: 程序鱼</span><br><span class="line">subtitle: 云飞</span><br><span class="line">description: 因为热爱所以喜欢，因为喜欢所以坚持</span><br><span class="line">keywords: </span><br><span class="line">author: codefishyyf</span><br><span class="line">language: zh-CN</span><br><span class="line">timezone: Asia/Shanghai</span><br></pre></td></tr></table></figure>
+
+<h1 id="2-设置next主题，更改样式"><a href="#2-设置next主题，更改样式" class="headerlink" title="2.设置next主题，更改样式"></a>2.设置next主题，更改样式</h1><h3 id="2-1在博客配置文件中修改theme为next"><a href="#2-1在博客配置文件中修改theme为next" class="headerlink" title="2.1在博客配置文件中修改theme为next"></a>2.1在博客配置文件中修改theme为next</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">theme: next</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-2在主题配置文件中选择一种样式"><a href="#2-2在主题配置文件中选择一种样式" class="headerlink" title="2.2在主题配置文件中选择一种样式"></a>2.2在主题配置文件中选择一种样式</h3><p>这个是我的样式，你们可以选择自己喜欢的样式【只要把前面的#去掉】</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Schemes</span><br><span class="line">#scheme: Muse</span><br><span class="line">#scheme: Mist</span><br><span class="line">#scheme: Pisces</span><br><span class="line">scheme: Gemini </span><br></pre></td></tr></table></figure>
+
+<h1 id="3-Menu增加标签、分类、关于页面"><a href="#3-Menu增加标签、分类、关于页面" class="headerlink" title="3. Menu增加标签、分类、关于页面"></a>3. Menu增加标签、分类、关于页面</h1><p>第一步：根据自己的需要，去掉对应功能前面的#号，</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">menu:</span><br><span class="line">  home: / || home</span><br><span class="line">  about: /about/ || user</span><br><span class="line">  tags: /tags/ || tags</span><br><span class="line">  categories: /categories/ || th</span><br><span class="line">  archives: /archives/ || archive</span><br><span class="line">  #schedule: /schedule/ || calendar</span><br><span class="line">  #sitemap: /sitemap.xml || sitemap</span><br><span class="line">  #commonweal: /404/ || heartbeat</span><br></pre></td></tr></table></figure>
+
+<p>第二步：新建这些页面</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo new page &quot;about&quot;</span><br><span class="line">hexo new page &quot;tags&quot;</span><br><span class="line">hexo new page &quot;categories&quot;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>第三步：修改这些页面的配置</p>
+<p>source\about\index.md</p>
+<p>source\tags\index.md</p>
+<p>source\categories\index.md</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">title: 关于</span><br><span class="line">type: &quot;about&quot;</span><br><span class="line"></span><br><span class="line">title: 标签</span><br><span class="line">type: &quot;tags&quot;</span><br><span class="line"></span><br><span class="line">title: 分类</span><br><span class="line">type: &quot;categories&quot;</span><br></pre></td></tr></table></figure>
+
+<h1 id="4-添加搜索功能"><a href="#4-添加搜索功能" class="headerlink" title="4. 添加搜索功能"></a>4. 添加搜索功能</h1><h3 id="4-1-方式一"><a href="#4-1-方式一" class="headerlink" title="4.1 方式一"></a>4.1 方式一</h3><p>第一步：安装插件【我这里使用的是exo-generator-searchdb】</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-generator-searchdb --save</span><br></pre></td></tr></table></figure>
+
+<p>第二步：博客配置文件中添加并修改local_search</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">search:</span><br><span class="line">  path: search.xml</span><br><span class="line">  field: post</span><br><span class="line">  format: html</span><br><span class="line">  limit: 10000</span><br><span class="line">local_search:</span><br><span class="line">  enable: true</span><br></pre></td></tr></table></figure>
+
+<h3 id="4-2-方式二"><a href="#4-2-方式二" class="headerlink" title="4.2 方式二"></a>4.2 方式二</h3><p>修改主题配置文件中local_Search如下【推荐】</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Local Search</span><br><span class="line">Dependencies: https://github.com/theme-next/hexo-generator-searchdb</span><br><span class="line">local_search:</span><br><span class="line">  enable: true</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>博客</category>
+      </categories>
+      <tags>
+        <tag>next</tag>
+      </tags>
+  </entry>
 </search>
