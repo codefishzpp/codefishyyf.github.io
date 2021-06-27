@@ -40,6 +40,7 @@
 <img data-src="/images/image-20210627213139145.png" alt="image-20210627213139145" style="zoom:50%;" />
 
 <h1 id="三、Maven基础概念"><a href="#三、Maven基础概念" class="headerlink" title="三、Maven基础概念"></a>三、Maven基础概念</h1><h2 id="1、仓库"><a href="#1、仓库" class="headerlink" title="1、仓库"></a>1、仓库</h2><p>仓库：用户存储资源，包含各种jar包</p>
+<p>​    <strong>maven仓库 <a href="https://mvnrepository.com/">https://mvnrepository.com</a></strong></p>
 <ul>
 <li><p><strong>中央仓库</strong>：Maven团队维护，存放所有资源的仓库</p>
 </li>
@@ -63,25 +64,44 @@
 <p>​    <a href="https://repo1.maven.org/maven2/">https://repo1.maven.org/maven2/</a></p>
 </li>
 <li><p>maven坐标的主要组成</p>
- <figure class="highlight xml"><table><tr><td class="code"><pre><span class="line">groupId:定义当前Maven项目隶属组织名称（通常是域名反写，例如：org.mybatis）</span><br><span class="line">artifactId:定义当前Maven项目名称（通常是模块名称，例如CRM、SMS）</span><br><span class="line">version:定义当前项目版本号</span><br><span class="line">packaging:定义该项目的打包方式</span><br></pre></td></tr></table></figure>
-
-<p>​    </p>
-</li>
+ <figure class="highlight xml"><table><tr><td class="code"><pre><span class="line">groupId:【组织ID】定义当前Maven项目隶属组织名称（通常是域名反写，例如：org.mybatis）</span><br><span class="line">artifactId:【项目ID】定义当前Maven项目名称（通常是模块名称，例如CRM、SMS）</span><br><span class="line">version:【版本号】定义当前项目版本号</span><br><span class="line">packaging:定义该项目的打包方式</span><br></pre></td></tr></table></figure></li>
+<li><p>Maven坐标的作用</p>
+<p>​    使用唯一标识，唯一性定位资源位置，通过该标识可以将资源的识别与下载工作交由机器完成。</p>
+<h2 id="3、本地仓库配置"><a href="#3、本地仓库配置" class="headerlink" title="3、本地仓库配置"></a>3、本地仓库配置</h2></li>
 </ul>
-<h1 id="四、第一个Maven项目（手动制作）"><a href="#四、第一个Maven项目（手动制作）" class="headerlink" title="四、第一个Maven项目（手动制作）"></a>四、第一个Maven项目（手动制作）</h1><h1 id="五、第一个Maven项目（IDEA生成）"><a href="#五、第一个Maven项目（IDEA生成）" class="headerlink" title="五、第一个Maven项目（IDEA生成）"></a>五、第一个Maven项目（IDEA生成）</h1><h1 id="六、依赖管理"><a href="#六、依赖管理" class="headerlink" title="六、依赖管理"></a>六、依赖管理</h1><h1 id="七、生命周期与插件"><a href="#七、生命周期与插件" class="headerlink" title="七、生命周期与插件"></a>七、生命周期与插件</h1>]]></content>
+<p>第一步：找到maven安装包下的conf包下的setting.xml文件</p>
+<p>第二步：找到localRepository这个注释</p>
+<p>第三步：复制**<localRepository>/path/to/local/repo</localRepository><strong>并修改为自己创建的</strong><localRepository>D:\1software\14Maven\repository</localRepository>**</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line">  <span class="comment">&lt;!-- localRepository</span></span><br><span class="line"><span class="comment">   | The path to the local repository maven will use to store artifacts.</span></span><br><span class="line"><span class="comment">   |</span></span><br><span class="line"><span class="comment">   | Default: $&#123;user.home&#125;/.m2/repository</span></span><br><span class="line"><span class="comment">  &lt;localRepository&gt;/path/to/local/repo&lt;/localRepository&gt;</span></span><br><span class="line"><span class="comment">  --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">localRepository</span>&gt;</span>D:\1software\14Maven\repository<span class="tag">&lt;/<span class="name">localRepository</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="4、远程仓库配置"><a href="#4、远程仓库配置" class="headerlink" title="4、远程仓库配置"></a>4、远程仓库配置</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">pom-4.0.0.xml文件打开方式：在lib中随便找一个.jar文件使用解压文件打开，然后返回上一层目录，搜索pom*.*文件，就可以找到。打开就可以找到下面的代码。其中&lt;url&gt;https://repo.maven.apache.org/maven2&lt;/url&gt;是国外的网站，打开速度慢。需要在别的地方进行修改，修改为国内的阿里云镜像仓库。</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line">-<span class="tag">&lt;<span class="name">repositories</span>&gt;</span></span><br><span class="line">-<span class="tag">&lt;<span class="name">repository</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">id</span>&gt;</span>central<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">name</span>&gt;</span>Central Repository<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">url</span>&gt;</span>https://repo.maven.apache.org/maven2<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">layout</span>&gt;</span>default<span class="tag">&lt;/<span class="name">layout</span>&gt;</span></span><br><span class="line">-<span class="tag">&lt;<span class="name">snapshots</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">enabled</span>&gt;</span>false<span class="tag">&lt;/<span class="name">enabled</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">snapshots</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">repository</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">repositories</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="5、镜像仓库配置"><a href="#5、镜像仓库配置" class="headerlink" title="5、镜像仓库配置"></a>5、镜像仓库配置</h2><ul>
+<li>在setting.xml文件中配置阿里云镜像仓库【全局setting设置】</li>
+</ul>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">mirrors</span>&gt;</span></span><br><span class="line">  <span class="comment">&lt;!--配置具体的仓库的下载镜像--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">mirror</span>&gt;</span></span><br><span class="line">      <span class="comment">&lt;!--此镜像的唯一标识符，用来区分不同的mirror元素--&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">id</span>&gt;</span>nexus-aliyun<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">        <span class="comment">&lt;!--对哪种仓库进行镜像，简单说就是替代哪个仓库--&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">mirrorOf</span>&gt;</span>central<span class="tag">&lt;/<span class="name">mirrorOf</span>&gt;</span></span><br><span class="line">        <span class="comment">&lt;!--镜像名称--&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">name</span>&gt;</span>Nexus aliyun<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">        <span class="comment">&lt;!--镜像URL--&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">url</span>&gt;</span>http://maven.aliyun.com/nexus/content/groups/public<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">mirror</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">mirrors</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+<h1 id="四、第一个Maven项目（手动制作）"><a href="#四、第一个Maven项目（手动制作）" class="headerlink" title="四、第一个Maven项目（手动制作）"></a>四、第一个Maven项目（手动制作）</h1><h2 id="1、maven工程目录结构"><a href="#1、maven工程目录结构" class="headerlink" title="1、maven工程目录结构"></a>1、maven工程目录结构</h2><img data-src="/images/image-20210627232754952.png" alt="image-20210627232754952" style="zoom:50%;" />
+
+
+
+<h2 id="2、构建命令"><a href="#2、构建命令" class="headerlink" title="2、构建命令"></a>2、构建命令</h2><ul>
+<li>maven构建命令使用mvn开头，后面添加功能参数，可以一次执行多个命令，使用空格分隔。</li>
+</ul>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line">mvn compile  #编译</span><br><span class="line">mvn clean    #清理</span><br><span class="line">mvn test     #测试</span><br><span class="line">mvn package  #打包</span><br><span class="line">mvn install  #安装到本地仓库</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="3、插件创建工程"><a href="#3、插件创建工程" class="headerlink" title="3、插件创建工程"></a>3、插件创建工程</h2><h1 id="五、第一个Maven项目（IDEA生成）"><a href="#五、第一个Maven项目（IDEA生成）" class="headerlink" title="五、第一个Maven项目（IDEA生成）"></a>五、第一个Maven项目（IDEA生成）</h1><h1 id="六、依赖管理"><a href="#六、依赖管理" class="headerlink" title="六、依赖管理"></a>六、依赖管理</h1><h1 id="七、生命周期与插件"><a href="#七、生命周期与插件" class="headerlink" title="七、生命周期与插件"></a>七、生命周期与插件</h1>]]></content>
       <categories>
         <category>java笔记</category>
       </categories>
       <tags>
         <tag>Maven</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>helloworld</title>
-    <url>/2021/06/27/helloworld/</url>
-    <content><![CDATA[<p><escape><span id="more"></span></escape></p>
-<p><img data-src="/images/image-20210627141459174.png" alt="image-20210627141459174"></p>
-]]></content>
   </entry>
   <entry>
     <title>hexo主题next7.8版本美化</title>
@@ -161,5 +181,12 @@
       <tags>
         <tag>next</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>helloworld</title>
+    <url>/2021/06/27/helloworld/</url>
+    <content><![CDATA[<p><escape><span id="more"></span></escape></p>
+<p><img data-src="/images/image-20210627141459174.png" alt="image-20210627141459174"></p>
+]]></content>
   </entry>
 </search>
