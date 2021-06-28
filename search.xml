@@ -248,7 +248,15 @@
   <entry>
     <title>Maven高级</title>
     <url>/2021/06/28/Maven%E9%AB%98%E7%BA%A7/</url>
-    <content><![CDATA[]]></content>
+    <content><![CDATA[<p><escape><span id="more"></span></escape></p>
+<p><img data-src="/images/u=1843699576,2090351546&fm=26&fmt=auto&gp=0.jpg"></p>
+<h1 id="一、分模块开发与设计"><a href="#一、分模块开发与设计" class="headerlink" title="一、分模块开发与设计"></a>一、分模块开发与设计</h1><h1 id="二、聚合"><a href="#二、聚合" class="headerlink" title="二、聚合"></a>二、聚合</h1><h1 id="三、继承"><a href="#三、继承" class="headerlink" title="三、继承"></a>三、继承</h1><h1 id="四、属性"><a href="#四、属性" class="headerlink" title="四、属性"></a>四、属性</h1><h1 id="五、版本管理"><a href="#五、版本管理" class="headerlink" title="五、版本管理"></a>五、版本管理</h1><h1 id="六、资源配置"><a href="#六、资源配置" class="headerlink" title="六、资源配置"></a>六、资源配置</h1><h1 id="七、多环境开发配置"><a href="#七、多环境开发配置" class="headerlink" title="七、多环境开发配置"></a>七、多环境开发配置</h1><h1 id="八、跳过测试"><a href="#八、跳过测试" class="headerlink" title="八、跳过测试"></a>八、跳过测试</h1><h1 id="九、私服"><a href="#九、私服" class="headerlink" title="九、私服"></a>九、私服</h1>]]></content>
+      <categories>
+        <category>java笔记</category>
+      </categories>
+      <tags>
+        <tag>Maven</tag>
+      </tags>
   </entry>
   <entry>
     <title>hexo主题next7.8版本美化</title>
