@@ -187,23 +187,68 @@
 </ul>
 <figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>com.codefish<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>java02<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>1.0-SNAPSHOT<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--排除依赖--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">exclusions</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">exclusion</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>log4j<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>log4j<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">exclusion</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">exclusions</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--排除依赖--&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
+<h2 id="5、依赖范围"><a href="#5、依赖范围" class="headerlink" title="5、依赖范围"></a>5、依赖范围</h2><ul>
+<li>依赖的jar默认情况可以在任何地方使用，可以通过scope标签设置其作用范围</li>
+<li>作用范围<ol>
+<li>主程序范围有效（main文件夹范围内）</li>
+<li>测试程序范围内有效（test文件夹范围内）</li>
+<li>是否参与打包（package指令范围内）</li>
+</ol>
+</li>
+</ul>
+<img data-src="/images/image-20210628134822581.png" style="zoom:50%;" />
 
-
-
-
-
-
-
-
-
-
-<h1 id="七、生命周期与插件"><a href="#七、生命周期与插件" class="headerlink" title="七、生命周期与插件"></a>七、生命周期与插件</h1>]]></content>
+<h1 id="七、生命周期与插件"><a href="#七、生命周期与插件" class="headerlink" title="七、生命周期与插件"></a>七、生命周期与插件</h1><h2 id="1、构建生命周期"><a href="#1、构建生命周期" class="headerlink" title="1、构建生命周期"></a>1、构建生命周期</h2><ul>
+<li><p>maven构建生命周期描述的是一次构建过程经理了多个事件</p>
+<ol>
+<li>clean：清理工作</li>
+<li>default：核心工作，例如编译，测试，打包，部署等。</li>
+<li>site：产生报告，发布站点</li>
+</ol>
+</li>
+<li><p><img data-src="../images/image-20210628140544003.png"></p>
+</li>
+<li><p>clean生命周期</p>
+<ol>
+<li><p>pre-clean：执行一些需要在clean之前完成的工作</p>
+</li>
+<li><p>clean：移除所有上一次构建生成的文件</p>
+</li>
+<li><p>执行一些需要在clean之后立刻完成的工作</p>
+</li>
+</ol>
+</li>
+<li><p>default构建生命周期</p>
+<img data-src="/images/image-20210628141310331.png" style="zoom:50%;" /></li>
+<li><p>site构建生命周期</p>
+<ol>
+<li>pre-site：执行一些需要在生成站点文档之前完成的工作</li>
+<li>site：生成项目的站点文档</li>
+<li>post-site：执行一些需要生成站点文档之后完成的工作，并且为部署做准备</li>
+<li>site-deploy：将生成的站点文档部署到特定的服务器上</li>
+</ol>
+</li>
+</ul>
+<h2 id="2、插件"><a href="#2、插件" class="headerlink" title="2、插件"></a>2、插件</h2><ul>
+<li><p>插件与生命周期内的阶段绑定，在执行到对应生命周期时执行对应的插件功能</p>
+</li>
+<li><p>默认maven在各个生命周期上绑定有预设的功能</p>
+</li>
+<li><p>通过插件可以自定义其他功能</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">build</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">plugins</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">plugin</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.apache.maven.plugins<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>maven-source-plugin<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">version</span>&gt;</span>2.2.1<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">executions</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">execution</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">goals</span>&gt;</span></span><br><span class="line">                        <span class="tag">&lt;<span class="name">goal</span>&gt;</span>jar<span class="tag">&lt;/<span class="name">goal</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;/<span class="name">goals</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">phase</span>&gt;</span>generate-test-resources<span class="tag">&lt;/<span class="name">phase</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;/<span class="name">execution</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">executions</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">plugin</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">plugins</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">build</span>&gt;</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+]]></content>
       <categories>
         <category>java笔记</category>
       </categories>
       <tags>
         <tag>Maven</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>Maven高级</title>
+    <url>/2021/06/28/Maven%E9%AB%98%E7%BA%A7/</url>
+    <content><![CDATA[]]></content>
   </entry>
   <entry>
     <title>hexo主题next7.8版本美化</title>
