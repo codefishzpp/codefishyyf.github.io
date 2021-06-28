@@ -4,12 +4,12 @@
     <title>Maven基础</title>
     <url>/2021/06/27/Maven%E5%9F%BA%E7%A1%80/</url>
     <content><![CDATA[<p><escape><span id="more"></span></escape></p>
-<p><img data-src="/images/u=1843699576,2090351546&fm=26&fmt=auto&gp=0.jpg" alt="img"></p>
+<p><img data-src="/images/u=1843699576,2090351546&fm=26&fmt=auto&gp=0.jpg"></p>
 <h1 id="一、Maven简介"><a href="#一、Maven简介" class="headerlink" title="一、Maven简介"></a>一、Maven简介</h1><h2 id="1-Maven是什么？"><a href="#1-Maven是什么？" class="headerlink" title="1.Maven是什么？"></a>1.Maven是什么？</h2><ul>
 <li>Maven的本质是一个项目管理工具，将项目开发和管理过程抽象成一个项目对象模型（POM）</li>
 <li>POM（Project Object Model）:项目对象模型</li>
 </ul>
-<p><img data-src="/images/image-20210627210003816.png" alt="image-20210627210003816"></p>
+<p><img data-src="/images/image-20210627210003816.png"></p>
 <h2 id="2-Maven的作用？"><a href="#2-Maven的作用？" class="headerlink" title="2.Maven的作用？"></a>2.Maven的作用？</h2><ul>
 <li><p>项目构建：提供标准的、跨平台的自动化项目构建方式。</p>
 </li>
@@ -24,7 +24,7 @@
 </li>
 <li><p>下载地址：<a href="http://maven.apache.org/download.cgi">http://maven.apache.org/download.cgi</a></p>
 <p>下载下面两个包，解压就可以了</p>
-<p><img data-src="/images/image-20210627211617787.png" alt="image-20210627211617787"></p>
+<p><img data-src="/images/image-20210627211617787.png"></p>
 </li>
 </ul>
 <h2 id="2-配置环境变量【前提jdk的环境变量已经配置好了】"><a href="#2-配置环境变量【前提jdk的环境变量已经配置好了】" class="headerlink" title="2.配置环境变量【前提jdk的环境变量已经配置好了】"></a>2.配置环境变量【前提jdk的环境变量已经配置好了】</h2><p><strong>第一步：复制下面的路径</strong></p>
@@ -104,6 +104,13 @@
       </tags>
   </entry>
   <entry>
+    <title>helloworld</title>
+    <url>/2021/06/27/helloworld/</url>
+    <content><![CDATA[<p><escape><span id="more"></span></escape></p>
+<p><img data-src="/images/image-20210627141459174.png" alt="image-20210627141459174"></p>
+]]></content>
+  </entry>
+  <entry>
     <title>hexo主题next7.8版本美化</title>
     <url>/2021/06/26/hexo%E4%B8%BB%E9%A2%98next7-8%E7%89%88%E6%9C%AC%E7%BE%8E%E5%8C%96/</url>
     <content><![CDATA[<p><escape><span id="more"></span></escape></p>
@@ -181,12 +188,5 @@
       <tags>
         <tag>next</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>helloworld</title>
-    <url>/2021/06/27/helloworld/</url>
-    <content><![CDATA[<p><escape><span id="more"></span></escape></p>
-<p><img data-src="/images/image-20210627141459174.png" alt="image-20210627141459174"></p>
-]]></content>
   </entry>
 </search>
