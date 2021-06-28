@@ -16,7 +16,7 @@
 <li><p>依赖管理：方便快捷的管理项目依赖的资源（jar包），避免资源间的版本冲突问题。</p>
 </li>
 <li><p>统一开发结构：提供标准的、统一的项目结构。如下所示</p>
-<p><img data-src="/images/image-20210627210404399.png" alt="image-20210627210404399"></p>
+<p><img data-src="/images/image-20210627210404399.png"></p>
 </li>
 </ul>
 <h1 id="二、Maven下载与安装"><a href="#二、Maven下载与安装" class="headerlink" title="二、Maven下载与安装"></a>二、Maven下载与安装</h1><h2 id="1-下载地址"><a href="#1-下载地址" class="headerlink" title="1.下载地址"></a>1.下载地址</h2><ul>
@@ -24,14 +24,14 @@
 </li>
 <li><p>下载地址：<a href="http://maven.apache.org/download.cgi">http://maven.apache.org/download.cgi</a></p>
 <p>下载下面两个包，解压就可以了</p>
-<p><img data-src="/images/image-20210627211617787.png"></p>
+<p><img data-src="/images/image-20210628095144085.png"></p>
 </li>
 </ul>
 <h2 id="2-配置环境变量【前提jdk的环境变量已经配置好了】"><a href="#2-配置环境变量【前提jdk的环境变量已经配置好了】" class="headerlink" title="2.配置环境变量【前提jdk的环境变量已经配置好了】"></a>2.配置环境变量【前提jdk的环境变量已经配置好了】</h2><p><strong>第一步：复制下面的路径</strong></p>
-<img data-src="/images/image-20210627212154888.png" alt="image-20210627212154888" style="zoom:50%;" />
+<img data-src="/images/image-20210628095240570.png" style="zoom:50%;" />
 
 <p><strong>第二步：在环境变量中新建一个MAVEN_HOME</strong></p>
-<img data-src="/images/image-20210627212511364.png" alt="image-20210627212511364" style="zoom:50%;" />
+<img data-src="/images/image-20210628095732891.png" alt="image-20210628095732891" style="zoom:50%;" />
 
 <p><strong>第三步：在path中添加%MAVEN_HOME%\bin</strong></p>
 <img data-src="/images/image-20210627212823031.png" alt="image-20210627212823031" style="zoom:50%;" />
@@ -95,20 +95,115 @@
 
 
 
-<h2 id="3、插件创建工程"><a href="#3、插件创建工程" class="headerlink" title="3、插件创建工程"></a>3、插件创建工程</h2><h1 id="五、第一个Maven项目（IDEA生成）"><a href="#五、第一个Maven项目（IDEA生成）" class="headerlink" title="五、第一个Maven项目（IDEA生成）"></a>五、第一个Maven项目（IDEA生成）</h1><h1 id="六、依赖管理"><a href="#六、依赖管理" class="headerlink" title="六、依赖管理"></a>六、依赖管理</h1><h1 id="七、生命周期与插件"><a href="#七、生命周期与插件" class="headerlink" title="七、生命周期与插件"></a>七、生命周期与插件</h1>]]></content>
+<h2 id="3、插件创建工程"><a href="#3、插件创建工程" class="headerlink" title="3、插件创建工程"></a>3、插件创建工程</h2><ul>
+<li>创建工程</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">mvn archetype:generate</span><br><span class="line">	-DgroupId=&#123;project-packaging&#125;</span><br><span class="line">	-DartifactId=&#123;project-name&#125;</span><br><span class="line">	-DarchetypeArtifactId=maven-archetype-quickstart</span><br><span class="line">	-DinteractiveMode=<span class="keyword">false</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>创建java工程</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">mvn archetype:generate </span><br><span class="line">    -DgroupId=com.codefish </span><br><span class="line">    -DartifactId=java-project </span><br><span class="line">    -DarchetypeArtifactId=maven-archetype-quickstart </span><br><span class="line">    -Dversion=<span class="number">0.0</span><span class="number">.1</span>-snapshot </span><br><span class="line">    -DinteractiveMode=<span class="keyword">false</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>创建web工程</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">mvn archetype:generate</span><br><span class="line">	-DgroupId=com.codefish #这个可以自己定义</span><br><span class="line">	-DartifactId=web-project</span><br><span class="line">	-DarchetypeArtifactId=maven-archetype-quickstart</span><br><span class="line">    -Dversion=<span class="number">0.0</span><span class="number">.1</span>-snapshot</span><br><span class="line">	-DinteractiveMode=<span class="keyword">false</span></span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<h1 id="五、第一个Maven项目（IDEA生成）"><a href="#五、第一个Maven项目（IDEA生成）" class="headerlink" title="五、第一个Maven项目（IDEA生成）"></a>五、第一个Maven项目（IDEA生成）</h1><h2 id="1、配置maven【这里下载3-6-1版本】"><a href="#1、配置maven【这里下载3-6-1版本】" class="headerlink" title="1、配置maven【这里下载3.6.1版本】"></a>1、配置maven【这里下载3.6.1版本】</h2><ul>
+<li><strong>idea2018兼容maven3.6.1及之前版本</strong>【推荐】</li>
+<li><strong>idea2020兼容maven3.6.3及之前版本</strong></li>
+<li><strong>idea2021兼容maven3.8.1及之前版本</strong></li>
+</ul>
+<p>IDEA中设置maven</p>
+<img data-src="/images/image-20210628091843776.png" style="zoom:50%;" />
+
+<h2 id="2、手动创建java项目"><a href="#2、手动创建java项目" class="headerlink" title="2、手动创建java项目"></a>2、手动创建java项目</h2><img data-src="/images/image-20210628101147945.png" style="zoom:50%;" />
+
+<h2 id="3、骨架创建java项目"><a href="#3、骨架创建java项目" class="headerlink" title="3、骨架创建java项目"></a>3、骨架创建java项目</h2><img data-src="/images/image-20210628100130870.png" style="zoom: 50%;" />
+
+
+
+<h2 id="3、骨架创建web项目"><a href="#3、骨架创建web项目" class="headerlink" title="3、骨架创建web项目"></a>3、骨架创建web项目</h2><img data-src="/images/image-20210628101555613.png" style="zoom:50%;" />
+
+<h2 id="4、插件"><a href="#4、插件" class="headerlink" title="4、插件"></a>4、插件</h2><ul>
+<li>Tomcat7运行插件【在maven仓库中搜索：Tomcat Maven】</li>
+</ul>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!--构建--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">build</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--设置插件--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">plugins</span>&gt;</span></span><br><span class="line">        <span class="comment">&lt;!--具体的插件配置--&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">plugin</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.apache.tomcat.maven<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>tomcat7-maven-plugin<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">version</span>&gt;</span>2.1<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">configuration</span>&gt;</span></span><br><span class="line">                <span class="comment">&lt;!--设置端口--&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">port</span>&gt;</span>8080<span class="tag">&lt;/<span class="name">port</span>&gt;</span></span><br><span class="line">                <span class="comment">&lt;!--设置虚拟路径--&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">path</span>&gt;</span>/<span class="tag">&lt;/<span class="name">path</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">configuration</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">plugin</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">plugins</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">build</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<img data-src="/images/image-20210628105416204.png" style="zoom:50%;" />
+
+<ul>
+<li><strong>pom.xml中的内容</strong></li>
+</ul>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">project</span> <span class="attr">xmlns</span>=<span class="string">&quot;http://maven.apache.org/POM/4.0.0&quot;</span> <span class="attr">xmlns:xsi</span>=<span class="string">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span></span></span><br><span class="line"><span class="tag">         <span class="attr">xsi:schemaLocation</span>=<span class="string">&quot;http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd&quot;</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--指定pom的模型版本--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">modelVersion</span>&gt;</span>4.0.0<span class="tag">&lt;/<span class="name">modelVersion</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--组织ID--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>com.codefish<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--项目id--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>web01<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--版本</span></span><br><span class="line"><span class="comment">    SNAPSHOT：开发版</span></span><br><span class="line"><span class="comment">    RELEASE: 完成版</span></span><br><span class="line"><span class="comment">    --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>1.0-SNAPSHOT<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--打包方式--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">packaging</span>&gt;</span>war<span class="tag">&lt;/<span class="name">packaging</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">&lt;!--设置当前工程的所有依赖--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">dependencies</span>&gt;</span></span><br><span class="line">        <span class="comment">&lt;!--一个具体的依赖--&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>junit<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>junit<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">version</span>&gt;</span>4.11<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">            <span class="comment">&lt;!--作用范围--&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">scope</span>&gt;</span>test<span class="tag">&lt;/<span class="name">scope</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">dependencies</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">&lt;!--构建--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">build</span>&gt;</span></span><br><span class="line">        <span class="comment">&lt;!--设置插件--&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">plugins</span>&gt;</span></span><br><span class="line">            <span class="comment">&lt;!--具体的插件配置--&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">plugin</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.apache.tomcat.maven<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>tomcat7-maven-plugin<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">version</span>&gt;</span>2.1<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">configuration</span>&gt;</span></span><br><span class="line">                    <span class="comment">&lt;!--设置端口--&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">port</span>&gt;</span>8080<span class="tag">&lt;/<span class="name">port</span>&gt;</span></span><br><span class="line">                    <span class="comment">&lt;!--设置虚拟路径--&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">path</span>&gt;</span>/<span class="tag">&lt;/<span class="name">path</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;/<span class="name">configuration</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">plugin</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">plugins</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">build</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">project</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>如何换掉web.xml中的老版本</li>
+</ul>
+<img data-src="/images/Image.png" style="zoom: 33%;" />
+
+<img data-src="/images/Image-1624850232571.png" style="zoom:50%;" />
+
+<img data-src="/images/Image-1624850260514.png" style="zoom:50%;" />
+
+<img data-src="/images/Image-1624850296477.png" style="zoom:60%;" />
+
+
+
+<h1 id="六、依赖管理"><a href="#六、依赖管理" class="headerlink" title="六、依赖管理"></a>六、依赖管理</h1><h2 id="1、依赖设置"><a href="#1、依赖设置" class="headerlink" title="1、依赖设置"></a>1、依赖设置</h2><ul>
+<li>依赖指当前项目运行所需要的jar，一个项目可以设置多个依赖</li>
+<li>格式：</li>
+</ul>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!--设置当前项目所依赖的所有jar--&gt;</span>   </span><br><span class="line"><span class="tag">&lt;<span class="name">dependencies</span>&gt;</span></span><br><span class="line">        <span class="comment">&lt;!--设置具体的依赖--&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">            <span class="comment">&lt;!--依赖所属群组id--&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>junit<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">            <span class="comment">&lt;!--依赖所属项目id--&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>junit<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">            <span class="comment">&lt;!--依赖版本号--&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">version</span>&gt;</span>4.11<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">dependencies</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="2、依赖传递【比如项目1需要用到项目2】"><a href="#2、依赖传递【比如项目1需要用到项目2】" class="headerlink" title="2、依赖传递【比如项目1需要用到项目2】"></a>2、依赖传递【比如项目1需要用到项目2】</h2><ul>
+<li><strong>直接依赖</strong>：在当前项目中通过依赖配置建立的依赖关系。简单来说就是当前项目中的jar包，与当前项目之间是直接依赖。</li>
+<li><strong>间接依赖</strong>：当前项目中使用其他项目，而其它项目又使用了别的jar包。简单来说就是当前项目与别的jar包之间是间接依赖。</li>
+</ul>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!--把项目2放到项目1的dependency中即可使用项目2--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">     <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>com.codefish<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">     <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>java02<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">     <span class="tag">&lt;<span class="name">version</span>&gt;</span>1.0-SNAPSHOT<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p><strong>依赖传递冲突问题</strong></p>
+<ol>
+<li><p><strong>路径优先</strong>：当依赖中出现相同的资源时，层级越深，优先级越低。</p>
+</li>
+<li><p><strong>声明优先</strong>：当资源在相同层级被依赖时，配置顺序靠前的覆盖配置顺序靠后的。</p>
+</li>
+<li><p>特殊优先：当同级配置了相同资源的不同版本，后配置的覆盖先配置的。</p>
+</li>
+</ol>
+</li>
+</ul>
+<p><img data-src="/images/image-20210628113939327.png"></p>
+<h2 id="3、可选依赖"><a href="#3、可选依赖" class="headerlink" title="3、可选依赖"></a>3、可选依赖</h2><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">     <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>com.codefish<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">     <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>java02<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">     <span class="tag">&lt;<span class="name">version</span>&gt;</span>1.0-SNAPSHOT<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">     <span class="comment">&lt;!--可选依赖--&gt;</span></span><br><span class="line">     <span class="tag">&lt;<span class="name">optional</span>&gt;</span>true<span class="tag">&lt;/<span class="name">optional</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="4、排除依赖"><a href="#4、排除依赖" class="headerlink" title="4、排除依赖"></a>4、排除依赖</h2><ul>
+<li>排除依赖指主动断开依赖的资源，被排除的资源<strong>无需指定版本</strong>，例如：项目1主动断开项目2带过来的依赖。</li>
+</ul>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>com.codefish<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>java02<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>1.0-SNAPSHOT<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--排除依赖--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">exclusions</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">exclusion</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>log4j<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>log4j<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">exclusion</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">exclusions</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--排除依赖--&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+
+
+
+
+
+<h1 id="七、生命周期与插件"><a href="#七、生命周期与插件" class="headerlink" title="七、生命周期与插件"></a>七、生命周期与插件</h1>]]></content>
       <categories>
         <category>java笔记</category>
       </categories>
       <tags>
         <tag>Maven</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>helloworld</title>
-    <url>/2021/06/27/helloworld/</url>
-    <content><![CDATA[<p><escape><span id="more"></span></escape></p>
-<p><img data-src="/images/image-20210627141459174.png" alt="image-20210627141459174"></p>
-]]></content>
   </entry>
   <entry>
     <title>hexo主题next7.8版本美化</title>
