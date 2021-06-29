@@ -239,7 +239,7 @@
 </ul>
 ]]></content>
       <categories>
-        <category>java笔记</category>
+        <category>Maven</category>
       </categories>
       <tags>
         <tag>Maven</tag>
@@ -252,7 +252,7 @@
 <p><img data-src="/images/u=1843699576,2090351546&fm=26&fmt=auto&gp=0.jpg"></p>
 <h1 id="一、分模块开发与设计"><a href="#一、分模块开发与设计" class="headerlink" title="一、分模块开发与设计"></a>一、分模块开发与设计</h1><h1 id="二、聚合"><a href="#二、聚合" class="headerlink" title="二、聚合"></a>二、聚合</h1><h1 id="三、继承"><a href="#三、继承" class="headerlink" title="三、继承"></a>三、继承</h1><h1 id="四、属性"><a href="#四、属性" class="headerlink" title="四、属性"></a>四、属性</h1><h1 id="五、版本管理"><a href="#五、版本管理" class="headerlink" title="五、版本管理"></a>五、版本管理</h1><h1 id="六、资源配置"><a href="#六、资源配置" class="headerlink" title="六、资源配置"></a>六、资源配置</h1><h1 id="七、多环境开发配置"><a href="#七、多环境开发配置" class="headerlink" title="七、多环境开发配置"></a>七、多环境开发配置</h1><h1 id="八、跳过测试"><a href="#八、跳过测试" class="headerlink" title="八、跳过测试"></a>八、跳过测试</h1><h1 id="九、私服"><a href="#九、私服" class="headerlink" title="九、私服"></a>九、私服</h1>]]></content>
       <categories>
-        <category>java笔记</category>
+        <category>Maven</category>
       </categories>
       <tags>
         <tag>Maven</tag>
@@ -307,7 +307,7 @@
 </ol>
 <h2 id="2、mybatis入门案例"><a href="#2、mybatis入门案例" class="headerlink" title="2、mybatis入门案例"></a>2、mybatis入门案例</h2><h1 id="四、自定义mybatis框架"><a href="#四、自定义mybatis框架" class="headerlink" title="四、自定义mybatis框架"></a>四、自定义mybatis框架</h1>]]></content>
       <categories>
-        <category>java笔记</category>
+        <category>SSM</category>
       </categories>
       <tags>
         <tag>Mybatis</tag>
@@ -320,7 +320,7 @@
 <p><img data-src="https://img0.baidu.com/it/u=2022511002,2558506576&fm=26&fmt=auto&gp=0.jpg"></p>
 <h1 id="一、mybatis基本使用"><a href="#一、mybatis基本使用" class="headerlink" title="一、mybatis基本使用"></a>一、mybatis基本使用</h1><h1 id="二、mybatis的单表crud"><a href="#二、mybatis的单表crud" class="headerlink" title="二、mybatis的单表crud"></a>二、mybatis的单表crud</h1><h1 id="三、mybatis的参数和返回值"><a href="#三、mybatis的参数和返回值" class="headerlink" title="三、mybatis的参数和返回值"></a>三、mybatis的参数和返回值</h1><h1 id="四、mybatis的dao编写"><a href="#四、mybatis的dao编写" class="headerlink" title="四、mybatis的dao编写"></a>四、mybatis的dao编写</h1><h1 id="五、mybatis配置的细节"><a href="#五、mybatis配置的细节" class="headerlink" title="五、mybatis配置的细节"></a>五、mybatis配置的细节</h1>]]></content>
       <categories>
-        <category>java笔记</category>
+        <category>SSM</category>
       </categories>
       <tags>
         <tag>Mybatis</tag>
@@ -333,7 +333,7 @@
 <p><img data-src="https://img0.baidu.com/it/u=2022511002,2558506576&fm=26&fmt=auto&gp=0.jpg"></p>
 <h1 id="一、mybatis的深入和多表"><a href="#一、mybatis的深入和多表" class="headerlink" title="一、mybatis的深入和多表"></a>一、mybatis的深入和多表</h1><h1 id="二、mybatis的连接池"><a href="#二、mybatis的连接池" class="headerlink" title="二、mybatis的连接池"></a>二、mybatis的连接池</h1><h1 id="三、mybatis的事物控制及设计的方法"><a href="#三、mybatis的事物控制及设计的方法" class="headerlink" title="三、mybatis的事物控制及设计的方法"></a>三、mybatis的事物控制及设计的方法</h1><h1 id="四、mybatis的多表查询"><a href="#四、mybatis的多表查询" class="headerlink" title="四、mybatis的多表查询"></a>四、mybatis的多表查询</h1><h1 id=""><a href="#" class="headerlink" title=""></a></h1>]]></content>
       <categories>
-        <category>java笔记</category>
+        <category>SSM</category>
       </categories>
       <tags>
         <tag>Mybatis</tag>
@@ -346,7 +346,7 @@
 <p><img data-src="https://img0.baidu.com/it/u=2022511002,2558506576&fm=26&fmt=auto&gp=0.jpg"></p>
 <h1 id="一、mybatis的缓存和注解开发"><a href="#一、mybatis的缓存和注解开发" class="headerlink" title="一、mybatis的缓存和注解开发"></a>一、mybatis的缓存和注解开发</h1><h1 id="二、mybatis中的加载时机（查询的时机）"><a href="#二、mybatis中的加载时机（查询的时机）" class="headerlink" title="二、mybatis中的加载时机（查询的时机）"></a>二、mybatis中的加载时机（查询的时机）</h1><h1 id="三、mybatis中的一级缓存和二级缓存"><a href="#三、mybatis中的一级缓存和二级缓存" class="headerlink" title="三、mybatis中的一级缓存和二级缓存"></a>三、mybatis中的一级缓存和二级缓存</h1><h1 id="四、mybatis的注解开发"><a href="#四、mybatis的注解开发" class="headerlink" title="四、mybatis的注解开发"></a>四、mybatis的注解开发</h1>]]></content>
       <categories>
-        <category>java笔记</category>
+        <category>SSM</category>
       </categories>
       <tags>
         <tag>Mybatis</tag>
@@ -429,6 +429,17 @@
       </categories>
       <tags>
         <tag>next</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>单例模式</title>
+    <url>/2021/06/29/%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>设计模式</category>
+      </categories>
+      <tags>
+        <tag>设计模式</tag>
       </tags>
   </entry>
   <entry>
