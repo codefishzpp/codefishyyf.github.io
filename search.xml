@@ -1,6 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Mybatis1</title>
+    <url>/2021/06/28/Mybatis1/</url>
+    <content><![CDATA[<p><escape><span id="more"></span></escape></p>
+<p><img data-src="https://img0.baidu.com/it/u=2022511002,2558506576&fm=26&fmt=auto&gp=0.jpg"></p>
+<h1 id="一、mybatis入门"><a href="#一、mybatis入门" class="headerlink" title="一、mybatis入门"></a>一、mybatis入门</h1><h2 id="1、什么是框架？"><a href="#1、什么是框架？" class="headerlink" title="1、什么是框架？"></a>1、什么是框架？</h2><p>是软件开发中的一套解决方案，不同的框架解决的是不同的问题。</p>
+<p>使用框架的好处：</p>
+<p>​            框架封装了很多的细节，使开发者可以使用极简的方式实现功能。大大提高开发效率。</p>
+<h2 id="2、三层架构和SSM框架的对应关系"><a href="#2、三层架构和SSM框架的对应关系" class="headerlink" title="2、三层架构和SSM框架的对应关系"></a>2、三层架构和SSM框架的对应关系</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line">表现层：SpringMVC</span><br><span class="line">    用于展示数据</span><br><span class="line">业务层：</span><br><span class="line">    处理业务需求</span><br><span class="line">持久层：Mybatis</span><br><span class="line">    和数据库进行交互</span><br></pre></td></tr></table></figure>
+
+<h1 id="二、mybatis的概述"><a href="#二、mybatis的概述" class="headerlink" title="二、mybatis的概述"></a>二、mybatis的概述</h1><ol>
+<li><p>内部封装了JDBC，使开发者只需要关注sql语句本身。</p>
+</li>
+<li><p>mybatis通过<strong>xml</strong>或<strong>注解</strong>的方式将执行的各种statement配置起来，并通过java对象和statement中sql的动态参数进行映射生成最终的sql语句。</p>
+</li>
+<li><p>采用<strong>ORM思想</strong>解决了实体和数据库映射的问题。【ORM思想】：对象关系映射。</p>
+<p><strong>实体类中的属性和数据库表的字段名称保持一致</strong></p>
+</li>
+</ol>
+<h1 id="三、mybatis入门案例"><a href="#三、mybatis入门案例" class="headerlink" title="三、mybatis入门案例"></a>三、mybatis入门案例</h1><h2 id="1、mybatis的环境搭建"><a href="#1、mybatis的环境搭建" class="headerlink" title="1、mybatis的环境搭建"></a>1、mybatis的环境搭建</h2><p><strong>第一步：创建maven工程并导入jar包（坐标依赖）</strong></p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependencies</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--下面这两个是mybatis中必须导入的--&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--mybatis坐标依赖--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.mybatis<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>mybatis<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">version</span>&gt;</span>3.4.5<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--数据库连接坐标依赖--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>mysql<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>mysql-connector-java<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">version</span>&gt;</span>5.1.6<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--上面这两个是mybatis中必须导入的--&gt;</span></span><br><span class="line">    </span><br><span class="line">    <span class="comment">&lt;!--log4j日志坐标依赖--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>log4j<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>log4j<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">version</span>&gt;</span>1.2.12<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--junit坐标依赖--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>junit<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>junit<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">version</span>&gt;</span>4.10<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">scope</span>&gt;</span>test<span class="tag">&lt;/<span class="name">scope</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependencies</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>第二步：创建实体类和dao的接口</strong></p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">User</span> <span class="keyword">implements</span> <span class="title">Serializable</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> Integer id;</span><br><span class="line">    <span class="keyword">private</span> String username;</span><br><span class="line">    <span class="keyword">private</span> Date birthday;</span><br><span class="line">    <span class="keyword">private</span> String sex;</span><br><span class="line">    <span class="keyword">private</span> String address;</span><br><span class="line">    ...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">UserDao</span> </span>&#123;</span><br><span class="line">    <span class="comment">/*查询所有操作*/</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> List&lt;User&gt; <span class="title">findAll</span><span class="params">()</span></span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>第三步：创建mybatis的主配置文件</strong></p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!--mybatis的主配置文件--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">configuration</span>&gt;</span></span><br><span class="line">	<span class="comment">&lt;!--配置环境--&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">environments</span> <span class="attr">default</span>=<span class="string">&quot;mysql&quot;</span>&gt;</span></span><br><span class="line">    	<span class="comment">&lt;!--default是什么，下面的id就是什么--&gt;</span></span><br><span class="line">    	<span class="comment">&lt;!--配置MySQL环境--&gt;</span></span><br><span class="line">   		 <span class="tag">&lt;<span class="name">environment</span> <span class="attr">id</span>=<span class="string">&quot;mysql&quot;</span>&gt;</span></span><br><span class="line">        	<span class="comment">&lt;!--配置事物的类型--&gt;</span></span><br><span class="line">        	<span class="tag">&lt;<span class="name">transactionManager</span> <span class="attr">type</span>=<span class="string">&quot;JDBC&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">transactionManager</span>&gt;</span></span><br><span class="line">       		 <span class="comment">&lt;!--配置数据源（连接池）--&gt;</span></span><br><span class="line">        	<span class="tag">&lt;<span class="name">dataSource</span> <span class="attr">type</span>=<span class="string">&quot;POOLED&quot;</span>&gt;</span></span><br><span class="line">            	<span class="comment">&lt;!--配置连接数据库的4个基本信息--&gt;</span></span><br><span class="line">            	<span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">&quot;driver&quot;</span> <span class="attr">value</span>=<span class="string">&quot;com.mysql.jdbc.Driver&quot;</span>/&gt;</span></span><br><span class="line">  				<span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">&quot;url&quot;</span><span class="attr">value</span>=<span class="string">&quot;jdbc:mysql://localhost:3306/eesy_mybatis&quot;</span>/&gt;</span></span><br><span class="line">            	<span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">&quot;username&quot;</span> <span class="attr">value</span>=<span class="string">&quot;root&quot;</span>/&gt;</span></span><br><span class="line">            	<span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">&quot;password&quot;</span> <span class="attr">value</span>=<span class="string">&quot;root&quot;</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">dataSource</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">environment</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">environments</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>第四步：创建映射配置文件</strong></p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!--指定映射配置文件的位置，映射配置文件指的是每个dao独立的配置文件--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">mappers</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">mapper</span> <span class="attr">resource</span>=<span class="string">&quot;com/codefish/dao/userDao.xml&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">mapper</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">mappers</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>环境搭建的注意事项：</p>
+<ol>
+<li><p>创建userDao.xml和userDao.java时，名称一致是为了和之前的知识保持一致。在mybatis中，它把持久层的操作接口名称和映射文件也叫做：<strong>Mapper</strong>。</p>
+</li>
+<li><p>在idea中创建目录的时候，它和包是不一样的。包在创建的时候是三级结构，目录在创建的时候，是一级目录。</p>
+</li>
+<li><p>mybatis的映射配置文件位置必须和dao接口的包结构相同。</p>
+</li>
+<li><p>映射配置文件的mapper标签namespace属性的取值必须是dao接口的全限定类名。</p>
+</li>
+<li><p>映射配置文件的操作配置，id属性必须是dao接口的方法名。</p>
+<p><strong>按照2,3,4,5的方式，我们在开发中就无须再写dao实现类</strong></p>
+</li>
+</ol>
+<h2 id="2、mybatis入门案例"><a href="#2、mybatis入门案例" class="headerlink" title="2、mybatis入门案例"></a>2、mybatis入门案例</h2><h1 id="四、自定义mybatis框架"><a href="#四、自定义mybatis框架" class="headerlink" title="四、自定义mybatis框架"></a>四、自定义mybatis框架</h1>]]></content>
+      <categories>
+        <category>SSM</category>
+      </categories>
+      <tags>
+        <tag>Mybatis</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Maven基础</title>
     <url>/2021/06/27/Maven%E5%9F%BA%E7%A1%80/</url>
     <content><![CDATA[<p><escape><span id="more"></span></escape></p>
@@ -272,61 +327,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Mybatis1</title>
-    <url>/2021/06/28/Mybatis1/</url>
-    <content><![CDATA[<p><escape><span id="more"></span></escape></p>
-<p><img data-src="https://img0.baidu.com/it/u=2022511002,2558506576&fm=26&fmt=auto&gp=0.jpg"></p>
-<h1 id="一、mybatis入门"><a href="#一、mybatis入门" class="headerlink" title="一、mybatis入门"></a>一、mybatis入门</h1><h2 id="1、什么是框架？"><a href="#1、什么是框架？" class="headerlink" title="1、什么是框架？"></a>1、什么是框架？</h2><p>是软件开发中的一套解决方案，不同的框架解决的是不同的问题。</p>
-<p>使用框架的好处：</p>
-<p>​            框架封装了很多的细节，使开发者可以使用极简的方式实现功能。大大提高开发效率。</p>
-<h2 id="2、三层架构和SSM框架的对应关系"><a href="#2、三层架构和SSM框架的对应关系" class="headerlink" title="2、三层架构和SSM框架的对应关系"></a>2、三层架构和SSM框架的对应关系</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line">表现层：SpringMVC</span><br><span class="line">    用于展示数据</span><br><span class="line">业务层：</span><br><span class="line">    处理业务需求</span><br><span class="line">持久层：Mybatis</span><br><span class="line">    和数据库进行交互</span><br></pre></td></tr></table></figure>
-
-<h1 id="二、mybatis的概述"><a href="#二、mybatis的概述" class="headerlink" title="二、mybatis的概述"></a>二、mybatis的概述</h1><ol>
-<li><p>内部封装了JDBC，使开发者只需要关注sql语句本身。</p>
-</li>
-<li><p>mybatis通过<strong>xml</strong>或<strong>注解</strong>的方式将执行的各种statement配置起来，并通过java对象和statement中sql的动态参数进行映射生成最终的sql语句。</p>
-</li>
-<li><p>采用<strong>ORM思想</strong>解决了实体和数据库映射的问题。【ORM思想】：对象关系映射。</p>
-<p><strong>实体类中的属性和数据库表的字段名称保持一致</strong></p>
-</li>
-</ol>
-<h1 id="三、mybatis入门案例"><a href="#三、mybatis入门案例" class="headerlink" title="三、mybatis入门案例"></a>三、mybatis入门案例</h1><h2 id="1、mybatis的环境搭建"><a href="#1、mybatis的环境搭建" class="headerlink" title="1、mybatis的环境搭建"></a>1、mybatis的环境搭建</h2><p><strong>第一步：创建maven工程并导入jar包（坐标依赖）</strong></p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependencies</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--下面这两个是mybatis中必须导入的--&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--mybatis坐标依赖--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.mybatis<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>mybatis<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">version</span>&gt;</span>3.4.5<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--数据库连接坐标依赖--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>mysql<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>mysql-connector-java<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">version</span>&gt;</span>5.1.6<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--上面这两个是mybatis中必须导入的--&gt;</span></span><br><span class="line">    </span><br><span class="line">    <span class="comment">&lt;!--log4j日志坐标依赖--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>log4j<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>log4j<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">version</span>&gt;</span>1.2.12<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--junit坐标依赖--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>junit<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>junit<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">version</span>&gt;</span>4.10<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">scope</span>&gt;</span>test<span class="tag">&lt;/<span class="name">scope</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependencies</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p><strong>第二步：创建实体类和dao的接口</strong></p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">User</span> <span class="keyword">implements</span> <span class="title">Serializable</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> Integer id;</span><br><span class="line">    <span class="keyword">private</span> String username;</span><br><span class="line">    <span class="keyword">private</span> Date birthday;</span><br><span class="line">    <span class="keyword">private</span> String sex;</span><br><span class="line">    <span class="keyword">private</span> String address;</span><br><span class="line">    ...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">UserDao</span> </span>&#123;</span><br><span class="line">    <span class="comment">/*查询所有操作*/</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> List&lt;User&gt; <span class="title">findAll</span><span class="params">()</span></span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p><strong>第三步：创建mybatis的主配置文件</strong></p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!--mybatis的主配置文件--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">configuration</span>&gt;</span></span><br><span class="line">	<span class="comment">&lt;!--配置环境--&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">environments</span> <span class="attr">default</span>=<span class="string">&quot;mysql&quot;</span>&gt;</span></span><br><span class="line">    	<span class="comment">&lt;!--default是什么，下面的id就是什么--&gt;</span></span><br><span class="line">    	<span class="comment">&lt;!--配置MySQL环境--&gt;</span></span><br><span class="line">   		 <span class="tag">&lt;<span class="name">environment</span> <span class="attr">id</span>=<span class="string">&quot;mysql&quot;</span>&gt;</span></span><br><span class="line">        	<span class="comment">&lt;!--配置事物的类型--&gt;</span></span><br><span class="line">        	<span class="tag">&lt;<span class="name">transactionManager</span> <span class="attr">type</span>=<span class="string">&quot;JDBC&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">transactionManager</span>&gt;</span></span><br><span class="line">       		 <span class="comment">&lt;!--配置数据源（连接池）--&gt;</span></span><br><span class="line">        	<span class="tag">&lt;<span class="name">dataSource</span> <span class="attr">type</span>=<span class="string">&quot;POOLED&quot;</span>&gt;</span></span><br><span class="line">            	<span class="comment">&lt;!--配置连接数据库的4个基本信息--&gt;</span></span><br><span class="line">            	<span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">&quot;driver&quot;</span> <span class="attr">value</span>=<span class="string">&quot;com.mysql.jdbc.Driver&quot;</span>/&gt;</span></span><br><span class="line">  				<span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">&quot;url&quot;</span><span class="attr">value</span>=<span class="string">&quot;jdbc:mysql://localhost:3306/eesy_mybatis&quot;</span>/&gt;</span></span><br><span class="line">            	<span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">&quot;username&quot;</span> <span class="attr">value</span>=<span class="string">&quot;root&quot;</span>/&gt;</span></span><br><span class="line">            	<span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">&quot;password&quot;</span> <span class="attr">value</span>=<span class="string">&quot;root&quot;</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">dataSource</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">environment</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">environments</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p><strong>第四步：创建映射配置文件</strong></p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!--指定映射配置文件的位置，映射配置文件指的是每个dao独立的配置文件--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">mappers</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">mapper</span> <span class="attr">resource</span>=<span class="string">&quot;com/codefish/dao/userDao.xml&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">mapper</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">mappers</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p>环境搭建的注意事项：</p>
-<ol>
-<li><p>创建userDao.xml和userDao.java时，名称一致是为了和之前的知识保持一致。在mybatis中，它把持久层的操作接口名称和映射文件也叫做：<strong>Mapper</strong>。</p>
-</li>
-<li><p>在idea中创建目录的时候，它和包是不一样的。包在创建的时候是三级结构，目录在创建的时候，是一级目录。</p>
-</li>
-<li><p>mybatis的映射配置文件位置必须和dao接口的包结构相同。</p>
-</li>
-<li><p>映射配置文件的mapper标签namespace属性的取值必须是dao接口的全限定类名。</p>
-</li>
-<li><p>映射配置文件的操作配置，id属性必须是dao接口的方法名。</p>
-<p><strong>按照2,3,4,5的方式，我们在开发中就无须再写dao实现类</strong></p>
-</li>
-</ol>
-<h2 id="2、mybatis入门案例"><a href="#2、mybatis入门案例" class="headerlink" title="2、mybatis入门案例"></a>2、mybatis入门案例</h2><h1 id="四、自定义mybatis框架"><a href="#四、自定义mybatis框架" class="headerlink" title="四、自定义mybatis框架"></a>四、自定义mybatis框架</h1>]]></content>
-      <categories>
-        <category>SSM</category>
-      </categories>
-      <tags>
-        <tag>Mybatis</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Mybatis2</title>
     <url>/2021/06/28/Mybatis2/</url>
     <content><![CDATA[<p><escape><span id="more"></span></escape></p>
@@ -434,7 +434,8 @@
   <entry>
     <title>单例模式</title>
     <url>/2021/06/29/%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/</url>
-    <content><![CDATA[]]></content>
+    <content><![CDATA[<p><escape><span id="more"></span></escape></p>
+]]></content>
       <categories>
         <category>设计模式</category>
       </categories>
@@ -443,20 +444,10 @@
       </tags>
   </entry>
   <entry>
-    <title>版本控制SVN</title>
-    <url>/2021/06/29/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6SVN/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>版本控制</category>
-      </categories>
-      <tags>
-        <tag>SVN</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>版本控制GIT</title>
     <url>/2021/06/29/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6GIT/</url>
-    <content><![CDATA[<p><img data-src="/images/u=3972665986,4100161236&fm=26&fmt=auto&gp=0.jpg" alt="u=3972665986,4100161236&amp;fm=26&amp;fmt=auto&amp;gp=0"></p>
+    <content><![CDATA[<p><escape><span id="more"></span></escape></p>
+<p><img data-src="/images/u=3972665986,4100161236&fm=26&fmt=auto&gp=0.jpg" alt="u=3972665986,4100161236&amp;fm=26&amp;fmt=auto&amp;gp=0"></p>
 <h1 id="一、Git概述"><a href="#一、Git概述" class="headerlink" title="一、Git概述"></a>一、Git概述</h1><h2 id="1、Git概述"><a href="#1、Git概述" class="headerlink" title="1、Git概述"></a>1、Git概述</h2><p>Git是一个免费的、开源的<strong>分布式版本控制系统</strong>，可以快速高效地处理从小型到大型的各种项目。</p>
 <p>Git易于学习，占地面积小，性能极快。它具有廉价的本地库，方便的暂存区域和多个工作流分支等特性。其性能优于Subversion、CVS、Perforce和ClearCase等版本控制工具。</p>
 <h2 id="2、什么是版本控制"><a href="#2、什么是版本控制" class="headerlink" title="2、什么是版本控制"></a>2、什么是版本控制</h2><p>版本控制是一种记录文件内容变化，以便将来查询特定版本修订情况的系统。</p>
@@ -626,7 +617,7 @@
 
 <p>3、查看详细日志信息</p>
 <p><img data-src="/images/image-20210629183022137.png"></p>
-<h1 id="7、模拟公司中修改代码"><a href="#7、模拟公司中修改代码" class="headerlink" title="7、模拟公司中修改代码"></a>7、模拟公司中修改代码</h1><img data-src="/images/image-20210629183507827.png" style="zoom:80%;" />
+<h2 id="7、模拟公司中修改代码"><a href="#7、模拟公司中修改代码" class="headerlink" title="7、模拟公司中修改代码"></a>7、模拟公司中修改代码</h2><img data-src="/images/image-20210629183507827.png" style="zoom:80%;" />
 
 <img data-src="/images/image-20210629183600665.png" style="zoom:80%;" />
 
@@ -693,7 +684,7 @@
 <img data-src="/images/image-20210629193837161.png" style="zoom:80%;" />
 
 <p>3、注意：</p>
-<p>​    <strong>master分支需要合并hot-Fix分支，需要切换到master分支上，再进行和并</strong>。</p>
+<p>  ​<strong>master分支需要合并hot-Fix分支，需要切换到master分支上，再进行和并</strong>。</p>
 <h4 id="⑤合并分支–冲突合并"><a href="#⑤合并分支–冲突合并" class="headerlink" title="⑤合并分支–冲突合并"></a>⑤合并分支–冲突合并</h4><p>1、冲突的原因：master修改了hello.txt，hot-Fix中也修改了hello.txt，所以会合并失败，必须（vim hello.txt）手动修改如下：</p>
 <img data-src="/images/image-20210629194700537.png" style="zoom: 67%;" />
 
@@ -733,6 +724,18 @@
       </categories>
       <tags>
         <tag>GIT</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>版本控制SVN</title>
+    <url>/2021/06/29/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6SVN/</url>
+    <content><![CDATA[<p><escape><span id="more"></span></escape></p>
+]]></content>
+      <categories>
+        <category>版本控制</category>
+      </categories>
+      <tags>
+        <tag>SVN</tag>
       </tags>
   </entry>
 </search>
