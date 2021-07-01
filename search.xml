@@ -1,9 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>IDEA常用设置</title>
+    <title>IDEA安装及常用设置</title>
     <url>/2021/07/01/IDEA%E5%AE%89%E8%A3%85%E5%8F%8A%E5%B8%B8%E7%94%A8%E8%AE%BE%E7%BD%AE/</url>
     <content><![CDATA[]]></content>
+      <categories>
+        <category>IDEA</category>
+      </categories>
+      <tags>
+        <tag>IDEA</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Maven高级</title>
+    <url>/2021/06/28/Maven%E9%AB%98%E7%BA%A7/</url>
+    <content><![CDATA[<p><escape><span id="more"></span></escape></p>
+<p><img data-src="/images/u=1843699576,2090351546&fm=26&fmt=auto&gp=0.jpg"></p>
+<h1 id="一、分模块开发与设计"><a href="#一、分模块开发与设计" class="headerlink" title="一、分模块开发与设计"></a>一、分模块开发与设计</h1><h1 id="二、聚合"><a href="#二、聚合" class="headerlink" title="二、聚合"></a>二、聚合</h1><h1 id="三、继承"><a href="#三、继承" class="headerlink" title="三、继承"></a>三、继承</h1><h1 id="四、属性"><a href="#四、属性" class="headerlink" title="四、属性"></a>四、属性</h1><h1 id="五、版本管理"><a href="#五、版本管理" class="headerlink" title="五、版本管理"></a>五、版本管理</h1><h1 id="六、资源配置"><a href="#六、资源配置" class="headerlink" title="六、资源配置"></a>六、资源配置</h1><h1 id="七、多环境开发配置"><a href="#七、多环境开发配置" class="headerlink" title="七、多环境开发配置"></a>七、多环境开发配置</h1><h1 id="八、跳过测试"><a href="#八、跳过测试" class="headerlink" title="八、跳过测试"></a>八、跳过测试</h1><h1 id="九、私服"><a href="#九、私服" class="headerlink" title="九、私服"></a>九、私服</h1>]]></content>
+      <categories>
+        <category>Maven</category>
+      </categories>
+      <tags>
+        <tag>Maven</tag>
+      </tags>
   </entry>
   <entry>
     <title>Maven基础</title>
@@ -251,32 +270,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Mybatis2</title>
-    <url>/2021/06/28/Mybatis2/</url>
-    <content><![CDATA[<p><escape><span id="more"></span></escape></p>
-<p><img data-src="https://img0.baidu.com/it/u=2022511002,2558506576&fm=26&fmt=auto&gp=0.jpg"></p>
-<h1 id="一、mybatis基本使用"><a href="#一、mybatis基本使用" class="headerlink" title="一、mybatis基本使用"></a>一、mybatis基本使用</h1><h1 id="二、mybatis的单表crud"><a href="#二、mybatis的单表crud" class="headerlink" title="二、mybatis的单表crud"></a>二、mybatis的单表crud</h1><h1 id="三、mybatis的参数和返回值"><a href="#三、mybatis的参数和返回值" class="headerlink" title="三、mybatis的参数和返回值"></a>三、mybatis的参数和返回值</h1><h1 id="四、mybatis的dao编写"><a href="#四、mybatis的dao编写" class="headerlink" title="四、mybatis的dao编写"></a>四、mybatis的dao编写</h1><h1 id="五、mybatis配置的细节"><a href="#五、mybatis配置的细节" class="headerlink" title="五、mybatis配置的细节"></a>五、mybatis配置的细节</h1>]]></content>
-      <categories>
-        <category>SSM</category>
-      </categories>
-      <tags>
-        <tag>Mybatis</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Maven高级</title>
-    <url>/2021/06/28/Maven%E9%AB%98%E7%BA%A7/</url>
-    <content><![CDATA[<p><escape><span id="more"></span></escape></p>
-<p><img data-src="/images/u=1843699576,2090351546&fm=26&fmt=auto&gp=0.jpg"></p>
-<h1 id="一、分模块开发与设计"><a href="#一、分模块开发与设计" class="headerlink" title="一、分模块开发与设计"></a>一、分模块开发与设计</h1><h1 id="二、聚合"><a href="#二、聚合" class="headerlink" title="二、聚合"></a>二、聚合</h1><h1 id="三、继承"><a href="#三、继承" class="headerlink" title="三、继承"></a>三、继承</h1><h1 id="四、属性"><a href="#四、属性" class="headerlink" title="四、属性"></a>四、属性</h1><h1 id="五、版本管理"><a href="#五、版本管理" class="headerlink" title="五、版本管理"></a>五、版本管理</h1><h1 id="六、资源配置"><a href="#六、资源配置" class="headerlink" title="六、资源配置"></a>六、资源配置</h1><h1 id="七、多环境开发配置"><a href="#七、多环境开发配置" class="headerlink" title="七、多环境开发配置"></a>七、多环境开发配置</h1><h1 id="八、跳过测试"><a href="#八、跳过测试" class="headerlink" title="八、跳过测试"></a>八、跳过测试</h1><h1 id="九、私服"><a href="#九、私服" class="headerlink" title="九、私服"></a>九、私服</h1>]]></content>
-      <categories>
-        <category>Maven</category>
-      </categories>
-      <tags>
-        <tag>Maven</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Mybatis1</title>
     <url>/2021/06/28/Mybatis1/</url>
     <content><![CDATA[<p><escape><span id="more"></span></escape></p>
@@ -337,6 +330,19 @@
     <content><![CDATA[<p><escape><span id="more"></span></escape></p>
 <p><img data-src="https://img0.baidu.com/it/u=2022511002,2558506576&fm=26&fmt=auto&gp=0.jpg"></p>
 <h1 id="一、mybatis的深入和多表"><a href="#一、mybatis的深入和多表" class="headerlink" title="一、mybatis的深入和多表"></a>一、mybatis的深入和多表</h1><h1 id="二、mybatis的连接池"><a href="#二、mybatis的连接池" class="headerlink" title="二、mybatis的连接池"></a>二、mybatis的连接池</h1><h1 id="三、mybatis的事物控制及设计的方法"><a href="#三、mybatis的事物控制及设计的方法" class="headerlink" title="三、mybatis的事物控制及设计的方法"></a>三、mybatis的事物控制及设计的方法</h1><h1 id="四、mybatis的多表查询"><a href="#四、mybatis的多表查询" class="headerlink" title="四、mybatis的多表查询"></a>四、mybatis的多表查询</h1><h1 id=""><a href="#" class="headerlink" title=""></a></h1>]]></content>
+      <categories>
+        <category>SSM</category>
+      </categories>
+      <tags>
+        <tag>Mybatis</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Mybatis2</title>
+    <url>/2021/06/28/Mybatis2/</url>
+    <content><![CDATA[<p><escape><span id="more"></span></escape></p>
+<p><img data-src="https://img0.baidu.com/it/u=2022511002,2558506576&fm=26&fmt=auto&gp=0.jpg"></p>
+<h1 id="一、mybatis基本使用"><a href="#一、mybatis基本使用" class="headerlink" title="一、mybatis基本使用"></a>一、mybatis基本使用</h1><h1 id="二、mybatis的单表crud"><a href="#二、mybatis的单表crud" class="headerlink" title="二、mybatis的单表crud"></a>二、mybatis的单表crud</h1><h1 id="三、mybatis的参数和返回值"><a href="#三、mybatis的参数和返回值" class="headerlink" title="三、mybatis的参数和返回值"></a>三、mybatis的参数和返回值</h1><h1 id="四、mybatis的dao编写"><a href="#四、mybatis的dao编写" class="headerlink" title="四、mybatis的dao编写"></a>四、mybatis的dao编写</h1><h1 id="五、mybatis配置的细节"><a href="#五、mybatis配置的细节" class="headerlink" title="五、mybatis配置的细节"></a>五、mybatis配置的细节</h1>]]></content>
       <categories>
         <category>SSM</category>
       </categories>
@@ -434,6 +440,30 @@
       </categories>
       <tags>
         <tag>next</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>版本控制SVN</title>
+    <url>/2021/06/29/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6SVN/</url>
+    <content><![CDATA[<p><escape><span id="more"></span></escape></p>
+]]></content>
+      <categories>
+        <category>版本控制</category>
+      </categories>
+      <tags>
+        <tag>SVN</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第三章:结构型模式(7种)</title>
+    <url>/2021/07/01/%E7%AC%AC%E4%B8%89%E7%AB%A0-%E7%BB%93%E6%9E%84%E5%9E%8B%E6%A8%A1%E5%BC%8F-7%E7%A7%8D/</url>
+    <content><![CDATA[<p><escape><span id="more"></span></escape></p>
+]]></content>
+      <categories>
+        <category>设计模式</category>
+      </categories>
+      <tags>
+        <tag>设计模式</tag>
       </tags>
   </entry>
   <entry>
@@ -720,8 +750,8 @@
       </tags>
   </entry>
   <entry>
-    <title>单例模式</title>
-    <url>/2021/06/29/%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/</url>
+    <title>第一章:设计模式相关内容介绍</title>
+    <url>/2021/06/29/%E7%AC%AC%E4%B8%80%E7%AB%A0%EF%BC%9A%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E7%9B%B8%E5%85%B3%E5%86%85%E5%AE%B9%E4%BB%8B%E7%BB%8D/</url>
     <content><![CDATA[<p><escape><span id="more"></span></escape></p>
 ]]></content>
       <categories>
@@ -732,15 +762,39 @@
       </tags>
   </entry>
   <entry>
-    <title>版本控制SVN</title>
-    <url>/2021/06/29/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6SVN/</url>
+    <title>第二章:创建者模式(5种)</title>
+    <url>/2021/07/01/%E7%AC%AC%E4%BA%8C%E7%AB%A0-%E5%88%9B%E5%BB%BA%E8%80%85%E6%A8%A1%E5%BC%8F-5%E7%A7%8D/</url>
     <content><![CDATA[<p><escape><span id="more"></span></escape></p>
 ]]></content>
       <categories>
-        <category>版本控制</category>
+        <category>设计模式</category>
       </categories>
       <tags>
-        <tag>SVN</tag>
+        <tag>设计模式</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第五章:综合练习</title>
+    <url>/2021/07/01/%E7%AC%AC%E4%BA%94%E7%AB%A0-%E7%BB%BC%E5%90%88%E7%BB%83%E4%B9%A0/</url>
+    <content><![CDATA[<p><escape><span id="more"></span></escape></p>
+]]></content>
+      <categories>
+        <category>设计模式</category>
+      </categories>
+      <tags>
+        <tag>设计模式</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第四章:行为型模式(11种)</title>
+    <url>/2021/07/01/%E7%AC%AC%E5%9B%9B%E7%AB%A0-%E8%A1%8C%E4%B8%BA%E5%9E%8B%E6%A8%A1%E5%BC%8F-11%E7%A7%8D/</url>
+    <content><![CDATA[<p><escape><span id="more"></span></escape></p>
+]]></content>
+      <categories>
+        <category>设计模式</category>
+      </categories>
+      <tags>
+        <tag>设计模式</tag>
       </tags>
   </entry>
 </search>
