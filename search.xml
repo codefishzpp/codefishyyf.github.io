@@ -1,30 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>IDEA安装及常用设置</title>
-    <url>/2021/07/01/IDEA%E5%AE%89%E8%A3%85%E5%8F%8A%E5%B8%B8%E7%94%A8%E8%AE%BE%E7%BD%AE/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>IDEA</category>
-      </categories>
-      <tags>
-        <tag>IDEA</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Maven高级</title>
-    <url>/2021/06/28/Maven%E9%AB%98%E7%BA%A7/</url>
-    <content><![CDATA[<p><escape><span id="more"></span></escape></p>
-<p><img data-src="/images/u=1843699576,2090351546&fm=26&fmt=auto&gp=0.jpg"></p>
-<h1 id="一、分模块开发与设计"><a href="#一、分模块开发与设计" class="headerlink" title="一、分模块开发与设计"></a>一、分模块开发与设计</h1><h1 id="二、聚合"><a href="#二、聚合" class="headerlink" title="二、聚合"></a>二、聚合</h1><h1 id="三、继承"><a href="#三、继承" class="headerlink" title="三、继承"></a>三、继承</h1><h1 id="四、属性"><a href="#四、属性" class="headerlink" title="四、属性"></a>四、属性</h1><h1 id="五、版本管理"><a href="#五、版本管理" class="headerlink" title="五、版本管理"></a>五、版本管理</h1><h1 id="六、资源配置"><a href="#六、资源配置" class="headerlink" title="六、资源配置"></a>六、资源配置</h1><h1 id="七、多环境开发配置"><a href="#七、多环境开发配置" class="headerlink" title="七、多环境开发配置"></a>七、多环境开发配置</h1><h1 id="八、跳过测试"><a href="#八、跳过测试" class="headerlink" title="八、跳过测试"></a>八、跳过测试</h1><h1 id="九、私服"><a href="#九、私服" class="headerlink" title="九、私服"></a>九、私服</h1>]]></content>
-      <categories>
-        <category>Maven</category>
-      </categories>
-      <tags>
-        <tag>Maven</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Maven基础</title>
     <url>/2021/06/27/Maven%E5%9F%BA%E7%A1%80/</url>
     <content><![CDATA[<p><escape><span id="more"></span></escape></p>
@@ -270,6 +246,31 @@
       </tags>
   </entry>
   <entry>
+    <title>IDEA安装及常用设置</title>
+    <url>/2021/07/01/IDEA%E5%AE%89%E8%A3%85%E5%8F%8A%E5%B8%B8%E7%94%A8%E8%AE%BE%E7%BD%AE/</url>
+    <content><![CDATA[<p><escape><span id="more"></span></escape></p>
+]]></content>
+      <categories>
+        <category>IDEA</category>
+      </categories>
+      <tags>
+        <tag>IDEA</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Maven高级</title>
+    <url>/2021/06/28/Maven%E9%AB%98%E7%BA%A7/</url>
+    <content><![CDATA[<p><escape><span id="more"></span></escape></p>
+<p><img data-src="/images/u=1843699576,2090351546&fm=26&fmt=auto&gp=0.jpg"></p>
+<h1 id="一、分模块开发与设计"><a href="#一、分模块开发与设计" class="headerlink" title="一、分模块开发与设计"></a>一、分模块开发与设计</h1><h1 id="二、聚合"><a href="#二、聚合" class="headerlink" title="二、聚合"></a>二、聚合</h1><h1 id="三、继承"><a href="#三、继承" class="headerlink" title="三、继承"></a>三、继承</h1><h1 id="四、属性"><a href="#四、属性" class="headerlink" title="四、属性"></a>四、属性</h1><h1 id="五、版本管理"><a href="#五、版本管理" class="headerlink" title="五、版本管理"></a>五、版本管理</h1><h1 id="六、资源配置"><a href="#六、资源配置" class="headerlink" title="六、资源配置"></a>六、资源配置</h1><h1 id="七、多环境开发配置"><a href="#七、多环境开发配置" class="headerlink" title="七、多环境开发配置"></a>七、多环境开发配置</h1><h1 id="八、跳过测试"><a href="#八、跳过测试" class="headerlink" title="八、跳过测试"></a>八、跳过测试</h1><h1 id="九、私服"><a href="#九、私服" class="headerlink" title="九、私服"></a>九、私服</h1>]]></content>
+      <categories>
+        <category>Maven</category>
+      </categories>
+      <tags>
+        <tag>Maven</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Mybatis1</title>
     <url>/2021/06/28/Mybatis1/</url>
     <content><![CDATA[<p><escape><span id="more"></span></escape></p>
@@ -279,7 +280,8 @@
 <p>​            框架封装了很多的细节，使开发者可以使用极简的方式实现功能。大大提高开发效率。</p>
 <h2 id="2、三层架构和SSM框架的对应关系"><a href="#2、三层架构和SSM框架的对应关系" class="headerlink" title="2、三层架构和SSM框架的对应关系"></a>2、三层架构和SSM框架的对应关系</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line">表现层：SpringMVC</span><br><span class="line">    用于展示数据</span><br><span class="line">业务层：</span><br><span class="line">    处理业务需求</span><br><span class="line">持久层：Mybatis</span><br><span class="line">    和数据库进行交互</span><br></pre></td></tr></table></figure>
 
-<h1 id="二、mybatis的概述"><a href="#二、mybatis的概述" class="headerlink" title="二、mybatis的概述"></a>二、mybatis的概述</h1><ol>
+<h1 id="二、mybatis的概述"><a href="#二、mybatis的概述" class="headerlink" title="二、mybatis的概述"></a>二、mybatis的概述</h1><p>mybatis中文文档：<a href="https://mybatis.org/">https://mybatis.org/</a></p>
+<ol>
 <li><p>内部封装了JDBC，使开发者只需要关注sql语句本身。</p>
 </li>
 <li><p>mybatis通过<strong>xml</strong>或<strong>注解</strong>的方式将执行的各种statement配置起来，并通过java对象和statement中sql的动态参数进行映射生成最终的sql语句。</p>
@@ -325,19 +327,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Mybatis3</title>
-    <url>/2021/06/28/Mybatis3/</url>
-    <content><![CDATA[<p><escape><span id="more"></span></escape></p>
-<p><img data-src="https://img0.baidu.com/it/u=2022511002,2558506576&fm=26&fmt=auto&gp=0.jpg"></p>
-<h1 id="一、mybatis的深入和多表"><a href="#一、mybatis的深入和多表" class="headerlink" title="一、mybatis的深入和多表"></a>一、mybatis的深入和多表</h1><h1 id="二、mybatis的连接池"><a href="#二、mybatis的连接池" class="headerlink" title="二、mybatis的连接池"></a>二、mybatis的连接池</h1><h1 id="三、mybatis的事物控制及设计的方法"><a href="#三、mybatis的事物控制及设计的方法" class="headerlink" title="三、mybatis的事物控制及设计的方法"></a>三、mybatis的事物控制及设计的方法</h1><h1 id="四、mybatis的多表查询"><a href="#四、mybatis的多表查询" class="headerlink" title="四、mybatis的多表查询"></a>四、mybatis的多表查询</h1><h1 id=""><a href="#" class="headerlink" title=""></a></h1>]]></content>
-      <categories>
-        <category>SSM</category>
-      </categories>
-      <tags>
-        <tag>Mybatis</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Mybatis2</title>
     <url>/2021/06/28/Mybatis2/</url>
     <content><![CDATA[<p><escape><span id="more"></span></escape></p>
@@ -364,106 +353,16 @@
       </tags>
   </entry>
   <entry>
-    <title>hexo主题next7.8版本美化</title>
-    <url>/2021/06/26/hexo%E4%B8%BB%E9%A2%98next7-8%E7%89%88%E6%9C%AC%E7%BE%8E%E5%8C%96/</url>
+    <title>Mybatis3</title>
+    <url>/2021/06/28/Mybatis3/</url>
     <content><![CDATA[<p><escape><span id="more"></span></escape></p>
-<h1 id="1-设置博主个人信息以及语言"><a href="#1-设置博主个人信息以及语言" class="headerlink" title="1.设置博主个人信息以及语言"></a>1.设置博主个人信息以及语言</h1><h3 id="1-1-在博客配置文件中修改Site"><a href="#1-1-在博客配置文件中修改Site" class="headerlink" title="1.1 在博客配置文件中修改Site"></a>1.1 在博客配置文件中修改Site</h3><figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">title:</span> <span class="string">程序鱼</span></span><br><span class="line"><span class="attr">subtitle:</span> <span class="string">云飞</span></span><br><span class="line"><span class="attr">description:</span> <span class="string">因为热爱所以喜欢，因为喜欢所以坚持</span></span><br><span class="line"><span class="attr">keywords:</span> </span><br><span class="line"><span class="attr">author:</span> <span class="string">codefishyyf</span></span><br><span class="line"><span class="attr">language:</span> <span class="string">zh-CN</span></span><br><span class="line"><span class="attr">timezone:</span> <span class="string">Asia/Shanghai</span></span><br></pre></td></tr></table></figure>
-
-<h1 id="2-设置next主题，更改样式"><a href="#2-设置next主题，更改样式" class="headerlink" title="2.设置next主题，更改样式"></a>2.设置next主题，更改样式</h1><h3 id="2-1在博客配置文件中修改theme为next"><a href="#2-1在博客配置文件中修改theme为next" class="headerlink" title="2.1在博客配置文件中修改theme为next"></a>2.1在博客配置文件中修改theme为next</h3><figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">theme:</span> <span class="string">next</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="2-2在主题配置文件中选择一种样式"><a href="#2-2在主题配置文件中选择一种样式" class="headerlink" title="2.2在主题配置文件中选择一种样式"></a>2.2在主题配置文件中选择一种样式</h3><p>这个是我的样式，你们可以选择自己喜欢的样式【只要把前面的#去掉】</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Schemes</span></span><br><span class="line"><span class="comment">#scheme: Muse</span></span><br><span class="line"><span class="comment">#scheme: Mist</span></span><br><span class="line"><span class="comment">#scheme: Pisces</span></span><br><span class="line"><span class="attr">scheme:</span> <span class="string">Gemini</span> </span><br></pre></td></tr></table></figure>
-
-<h1 id="3-Menu增加标签、分类、关于页面"><a href="#3-Menu增加标签、分类、关于页面" class="headerlink" title="3. Menu增加标签、分类、关于页面"></a>3. Menu增加标签、分类、关于页面</h1><p>第一步：根据自己的需要，去掉对应功能前面的#号，</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">menu:</span></span><br><span class="line">  <span class="attr">home:</span> <span class="string">/</span> <span class="string">||</span> <span class="string">home</span></span><br><span class="line">  <span class="attr">about:</span> <span class="string">/about/</span> <span class="string">||</span> <span class="string">user</span></span><br><span class="line">  <span class="attr">tags:</span> <span class="string">/tags/</span> <span class="string">||</span> <span class="string">tags</span></span><br><span class="line">  <span class="attr">categories:</span> <span class="string">/categories/</span> <span class="string">||</span> <span class="string">th</span></span><br><span class="line">  <span class="attr">archives:</span> <span class="string">/archives/</span> <span class="string">||</span> <span class="string">archive</span></span><br><span class="line">  <span class="comment">#schedule: /schedule/ || calendar</span></span><br><span class="line">  <span class="comment">#sitemap: /sitemap.xml || sitemap</span></span><br><span class="line">  <span class="comment">#commonweal: /404/ || heartbeat</span></span><br></pre></td></tr></table></figure>
-
-<p>第二步：新建这些页面</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="string">hexo</span> <span class="string">new</span> <span class="string">page</span> <span class="string">&quot;about&quot;</span></span><br><span class="line"><span class="string">hexo</span> <span class="string">new</span> <span class="string">page</span> <span class="string">&quot;tags&quot;</span></span><br><span class="line"><span class="string">hexo</span> <span class="string">new</span> <span class="string">page</span> <span class="string">&quot;categories&quot;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<p>第三步：修改这些页面的配置</p>
-<p>source\about\index.md</p>
-<p>source\tags\index.md</p>
-<p>source\categories\index.md</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">title:</span> <span class="string">关于</span></span><br><span class="line"><span class="attr">type:</span> <span class="string">&quot;about&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="attr">title:</span> <span class="string">标签</span></span><br><span class="line"><span class="attr">type:</span> <span class="string">&quot;tags&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="attr">title:</span> <span class="string">分类</span></span><br><span class="line"><span class="attr">type:</span> <span class="string">&quot;categories&quot;</span></span><br></pre></td></tr></table></figure>
-
-<h1 id="4-添加搜索功能"><a href="#4-添加搜索功能" class="headerlink" title="4. 添加搜索功能"></a>4. 添加搜索功能</h1><h3 id="4-1-方式一"><a href="#4-1-方式一" class="headerlink" title="4.1 方式一"></a>4.1 方式一</h3><p>第一步：安装插件【我这里使用的是exo-generator-searchdb】</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="string">npm</span> <span class="string">install</span> <span class="string">hexo-generator-searchdb</span> <span class="string">--save</span></span><br></pre></td></tr></table></figure>
-
-<p>第二步：博客配置文件中添加并修改local_search</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">search:</span></span><br><span class="line">  <span class="attr">path:</span> <span class="string">search.xml</span></span><br><span class="line">  <span class="attr">field:</span> <span class="string">post</span></span><br><span class="line">  <span class="attr">format:</span> <span class="string">html</span></span><br><span class="line">  <span class="attr">limit:</span> <span class="number">10000</span></span><br><span class="line"><span class="attr">local_search:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="4-2-方式二"><a href="#4-2-方式二" class="headerlink" title="4.2 方式二"></a>4.2 方式二</h3><p>修改主题配置文件中local_Search如下【推荐】</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Local Search</span></span><br><span class="line"><span class="attr">Dependencies:</span> <span class="string">https://github.com/theme-next/hexo-generator-searchdb</span></span><br><span class="line"><span class="attr">local_search:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
-
-<h1 id="5-取消hexo文章目录对标题的自动编号"><a href="#5-取消hexo文章目录对标题的自动编号" class="headerlink" title="5.取消hexo文章目录对标题的自动编号"></a>5.取消hexo文章目录对标题的自动编号</h1><p> 将主题配置文件中的mumber 改成false</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">number:</span> <span class="literal">false</span></span><br></pre></td></tr></table></figure>
-
-<h1 id="6-设置左上角或者右上角github图标"><a href="#6-设置左上角或者右上角github图标" class="headerlink" title="6.设置左上角或者右上角github图标"></a>6.设置左上角或者右上角github图标</h1><p>在主题配置文件中，启用github-banner</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">github_banner:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">permalink:</span> <span class="string">https://github.com/codefishyyf</span></span><br><span class="line">  <span class="attr">title:</span> <span class="string">Follow</span> <span class="string">me</span> <span class="string">on</span> <span class="string">GitHub</span></span><br></pre></td></tr></table></figure>
-
-<h1 id="7-设置阅读进度百分比显示"><a href="#7-设置阅读进度百分比显示" class="headerlink" title="7.设置阅读进度百分比显示"></a>7.设置阅读进度百分比显示</h1><p>在博客配置文件下，修改back2top中的参数如下所示：</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">back2top:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">sidebar:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">scrollpercent:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
-
-<h1 id="8-设置阅读位置标记功能"><a href="#8-设置阅读位置标记功能" class="headerlink" title="8.设置阅读位置标记功能"></a>8.设置阅读位置标记功能</h1><p>在主题配置文件下，设置如下：</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">bookmark:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="comment"># Customize the color of the bookmark.</span></span><br><span class="line">  <span class="attr">color:</span> <span class="string">&quot;#222&quot;</span></span><br><span class="line">  <span class="comment"># If auto, save the reading progress when closing the page or clicking the bookmark-icon.</span></span><br><span class="line">  <span class="comment"># If manual, only save it by clicking the bookmark-icon.</span></span><br><span class="line">  <span class="attr">save:</span> <span class="string">auto</span></span><br></pre></td></tr></table></figure>
-
-<h1 id="9-设置统计字数和阅读时间的估计"><a href="#9-设置统计字数和阅读时间的估计" class="headerlink" title="9.设置统计字数和阅读时间的估计"></a>9.设置统计字数和阅读时间的估计</h1><p>在主题配置文件下，设置如下：</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">symbols_count_time:</span></span><br><span class="line">  <span class="attr">separated_meta:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">item_text_post:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">item_text_total:</span> <span class="literal">false</span></span><br></pre></td></tr></table></figure>
-
-<h1 id="10-添加文章分享按钮"><a href="#10-添加文章分享按钮" class="headerlink" title="10.添加文章分享按钮"></a>10.添加文章分享按钮</h1><p>第一步：在next主题下的source/lib中安装needmoreshare2模块</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="string">git</span> <span class="string">clone</span> <span class="string">https://github.com/theme-next/theme-next-needmoreshare2</span> <span class="string">source/lib/needsharebutton</span></span><br></pre></td></tr></table></figure>
-
-<p>第二步：在主题配置文件中添加如下代码：</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="comment">#添加文章分享按钮模块</span></span><br><span class="line"><span class="attr">needmoreshare2:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">postbottom:</span></span><br><span class="line">    <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">    <span class="attr">options:</span></span><br><span class="line">      <span class="attr">iconStyle:</span> <span class="string">default</span></span><br><span class="line">      <span class="attr">boxForm:</span> <span class="string">horizontal</span></span><br><span class="line">      <span class="attr">position:</span> <span class="string">bottomCenter</span></span><br><span class="line">      <span class="attr">networks:</span> <span class="string">Weibo,Wechat,Douban,QQZone</span></span><br><span class="line">  <span class="attr">float:</span></span><br><span class="line">    <span class="attr">enable:</span> <span class="literal">false</span></span><br><span class="line">    <span class="attr">options:</span></span><br><span class="line">      <span class="attr">iconStyle:</span> <span class="string">default</span></span><br><span class="line">      <span class="attr">boxForm:</span> <span class="string">horizontal</span></span><br><span class="line">      <span class="attr">position:</span> <span class="string">middleRight</span></span><br><span class="line">      <span class="attr">networks:</span> <span class="string">Weibo,Wechat,Douban,QQZone</span></span><br></pre></td></tr></table></figure>
-
-<h1 id="11-添加自定义404页面"><a href="#11-添加自定义404页面" class="headerlink" title="11.添加自定义404页面"></a>11.添加自定义404页面</h1><figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="string">暂时还没完成</span></span><br></pre></td></tr></table></figure>
-
-<h1 id="12图片放大预览功能"><a href="#12图片放大预览功能" class="headerlink" title="12图片放大预览功能"></a>12图片放大预览功能</h1><p>在主题配置文件下启动fancybox</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="string">fancybox:true</span></span><br></pre></td></tr></table></figure>
-
-<h1 id="13图片懒加载"><a href="#13图片懒加载" class="headerlink" title="13图片懒加载"></a>13图片懒加载</h1><figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">lazyload:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
-
-<h1 id="14点击出现桃心效果"><a href="#14点击出现桃心效果" class="headerlink" title="14点击出现桃心效果"></a>14点击出现桃心效果</h1><figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="string">暂时还没完成</span></span><br></pre></td></tr></table></figure>
-
-<h1 id="15标签云效果"><a href="#15标签云效果" class="headerlink" title="15标签云效果"></a>15标签云效果</h1><figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="string">暂时还没完成</span></span><br></pre></td></tr></table></figure>
-
-<h1 id="16设置代码块复制和代码高亮"><a href="#16设置代码块复制和代码高亮" class="headerlink" title="16设置代码块复制和代码高亮"></a>16设置代码块复制和代码高亮</h1><p>在主题配置文件中修改codeblock</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">codeblock:</span></span><br><span class="line">  <span class="attr">highlight_theme:</span> <span class="string">normal</span></span><br><span class="line">  <span class="attr">copy_button:</span></span><br><span class="line">    <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">    <span class="attr">show_result:</span> <span class="literal">true</span></span><br><span class="line">    <span class="attr">style:</span></span><br></pre></td></tr></table></figure>
-
-<h1 id="17修改文章底部标签样式"><a href="#17修改文章底部标签样式" class="headerlink" title="17修改文章底部标签样式"></a>17修改文章底部标签样式</h1><figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="string">tag_icon:true</span></span><br></pre></td></tr></table></figure>
-
-
-
-]]></content>
+<p><img data-src="https://img0.baidu.com/it/u=2022511002,2558506576&fm=26&fmt=auto&gp=0.jpg"></p>
+<h1 id="一、mybatis的深入和多表"><a href="#一、mybatis的深入和多表" class="headerlink" title="一、mybatis的深入和多表"></a>一、mybatis的深入和多表</h1><h1 id="二、mybatis的连接池"><a href="#二、mybatis的连接池" class="headerlink" title="二、mybatis的连接池"></a>二、mybatis的连接池</h1><h1 id="三、mybatis的事物控制及设计的方法"><a href="#三、mybatis的事物控制及设计的方法" class="headerlink" title="三、mybatis的事物控制及设计的方法"></a>三、mybatis的事物控制及设计的方法</h1><h1 id="四、mybatis的多表查询"><a href="#四、mybatis的多表查询" class="headerlink" title="四、mybatis的多表查询"></a>四、mybatis的多表查询</h1><h1 id=""><a href="#" class="headerlink" title=""></a></h1>]]></content>
       <categories>
-        <category>博客搭建</category>
+        <category>SSM</category>
       </categories>
       <tags>
-        <tag>next</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>版本控制SVN</title>
-    <url>/2021/06/29/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6SVN/</url>
-    <content><![CDATA[<p><escape><span id="more"></span></escape></p>
-]]></content>
-      <categories>
-        <category>版本控制</category>
-      </categories>
-      <tags>
-        <tag>SVN</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第三章:结构型模式(7种)</title>
-    <url>/2021/07/01/%E7%AC%AC%E4%B8%89%E7%AB%A0-%E7%BB%93%E6%9E%84%E5%9E%8B%E6%A8%A1%E5%BC%8F-7%E7%A7%8D/</url>
-    <content><![CDATA[<p><escape><span id="more"></span></escape></p>
-]]></content>
-      <categories>
-        <category>设计模式</category>
-      </categories>
-      <tags>
-        <tag>设计模式</tag>
+        <tag>Mybatis</tag>
       </tags>
   </entry>
   <entry>
@@ -750,10 +649,186 @@
       </tags>
   </entry>
   <entry>
+    <title>hexo主题next7.8版本美化</title>
+    <url>/2021/06/26/hexo%E4%B8%BB%E9%A2%98next7-8%E7%89%88%E6%9C%AC%E7%BE%8E%E5%8C%96/</url>
+    <content><![CDATA[<p><escape><span id="more"></span></escape></p>
+<h1 id="1-设置博主个人信息以及语言"><a href="#1-设置博主个人信息以及语言" class="headerlink" title="1.设置博主个人信息以及语言"></a>1.设置博主个人信息以及语言</h1><h3 id="1-1-在博客配置文件中修改Site"><a href="#1-1-在博客配置文件中修改Site" class="headerlink" title="1.1 在博客配置文件中修改Site"></a>1.1 在博客配置文件中修改Site</h3><figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">title:</span> <span class="string">程序鱼</span></span><br><span class="line"><span class="attr">subtitle:</span> <span class="string">云飞</span></span><br><span class="line"><span class="attr">description:</span> <span class="string">因为热爱所以喜欢，因为喜欢所以坚持</span></span><br><span class="line"><span class="attr">keywords:</span> </span><br><span class="line"><span class="attr">author:</span> <span class="string">codefishyyf</span></span><br><span class="line"><span class="attr">language:</span> <span class="string">zh-CN</span></span><br><span class="line"><span class="attr">timezone:</span> <span class="string">Asia/Shanghai</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="2-设置next主题，更改样式"><a href="#2-设置next主题，更改样式" class="headerlink" title="2.设置next主题，更改样式"></a>2.设置next主题，更改样式</h1><h3 id="2-1在博客配置文件中修改theme为next"><a href="#2-1在博客配置文件中修改theme为next" class="headerlink" title="2.1在博客配置文件中修改theme为next"></a>2.1在博客配置文件中修改theme为next</h3><figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">theme:</span> <span class="string">next</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="2-2在主题配置文件中选择一种样式"><a href="#2-2在主题配置文件中选择一种样式" class="headerlink" title="2.2在主题配置文件中选择一种样式"></a>2.2在主题配置文件中选择一种样式</h3><p>这个是我的样式，你们可以选择自己喜欢的样式【只要把前面的#去掉】</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Schemes</span></span><br><span class="line"><span class="comment">#scheme: Muse</span></span><br><span class="line"><span class="comment">#scheme: Mist</span></span><br><span class="line"><span class="comment">#scheme: Pisces</span></span><br><span class="line"><span class="attr">scheme:</span> <span class="string">Gemini</span> </span><br></pre></td></tr></table></figure>
+
+<h1 id="3-Menu增加标签、分类、关于页面"><a href="#3-Menu增加标签、分类、关于页面" class="headerlink" title="3. Menu增加标签、分类、关于页面"></a>3. Menu增加标签、分类、关于页面</h1><p>第一步：根据自己的需要，去掉对应功能前面的#号，</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">menu:</span></span><br><span class="line">  <span class="attr">home:</span> <span class="string">/</span> <span class="string">||</span> <span class="string">home</span></span><br><span class="line">  <span class="attr">about:</span> <span class="string">/about/</span> <span class="string">||</span> <span class="string">user</span></span><br><span class="line">  <span class="attr">tags:</span> <span class="string">/tags/</span> <span class="string">||</span> <span class="string">tags</span></span><br><span class="line">  <span class="attr">categories:</span> <span class="string">/categories/</span> <span class="string">||</span> <span class="string">th</span></span><br><span class="line">  <span class="attr">archives:</span> <span class="string">/archives/</span> <span class="string">||</span> <span class="string">archive</span></span><br><span class="line">  <span class="comment">#schedule: /schedule/ || calendar</span></span><br><span class="line">  <span class="comment">#sitemap: /sitemap.xml || sitemap</span></span><br><span class="line">  <span class="comment">#commonweal: /404/ || heartbeat</span></span><br></pre></td></tr></table></figure>
+
+<p>第二步：新建这些页面</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="string">hexo</span> <span class="string">new</span> <span class="string">page</span> <span class="string">&quot;about&quot;</span></span><br><span class="line"><span class="string">hexo</span> <span class="string">new</span> <span class="string">page</span> <span class="string">&quot;tags&quot;</span></span><br><span class="line"><span class="string">hexo</span> <span class="string">new</span> <span class="string">page</span> <span class="string">&quot;categories&quot;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>第三步：修改这些页面的配置</p>
+<p>source\about\index.md</p>
+<p>source\tags\index.md</p>
+<p>source\categories\index.md</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">title:</span> <span class="string">关于</span></span><br><span class="line"><span class="attr">type:</span> <span class="string">&quot;about&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="attr">title:</span> <span class="string">标签</span></span><br><span class="line"><span class="attr">type:</span> <span class="string">&quot;tags&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="attr">title:</span> <span class="string">分类</span></span><br><span class="line"><span class="attr">type:</span> <span class="string">&quot;categories&quot;</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="4-添加搜索功能"><a href="#4-添加搜索功能" class="headerlink" title="4. 添加搜索功能"></a>4. 添加搜索功能</h1><h3 id="4-1-方式一"><a href="#4-1-方式一" class="headerlink" title="4.1 方式一"></a>4.1 方式一</h3><p>第一步：安装插件【我这里使用的是exo-generator-searchdb】</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="string">npm</span> <span class="string">install</span> <span class="string">hexo-generator-searchdb</span> <span class="string">--save</span></span><br></pre></td></tr></table></figure>
+
+<p>第二步：博客配置文件中添加并修改local_search</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">search:</span></span><br><span class="line">  <span class="attr">path:</span> <span class="string">search.xml</span></span><br><span class="line">  <span class="attr">field:</span> <span class="string">post</span></span><br><span class="line">  <span class="attr">format:</span> <span class="string">html</span></span><br><span class="line">  <span class="attr">limit:</span> <span class="number">10000</span></span><br><span class="line"><span class="attr">local_search:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="4-2-方式二"><a href="#4-2-方式二" class="headerlink" title="4.2 方式二"></a>4.2 方式二</h3><p>修改主题配置文件中local_Search如下【推荐】</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Local Search</span></span><br><span class="line"><span class="attr">Dependencies:</span> <span class="string">https://github.com/theme-next/hexo-generator-searchdb</span></span><br><span class="line"><span class="attr">local_search:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="5-取消hexo文章目录对标题的自动编号"><a href="#5-取消hexo文章目录对标题的自动编号" class="headerlink" title="5.取消hexo文章目录对标题的自动编号"></a>5.取消hexo文章目录对标题的自动编号</h1><p> 将主题配置文件中的mumber 改成false</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">number:</span> <span class="literal">false</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="6-设置左上角或者右上角github图标"><a href="#6-设置左上角或者右上角github图标" class="headerlink" title="6.设置左上角或者右上角github图标"></a>6.设置左上角或者右上角github图标</h1><p>在主题配置文件中，启用github-banner</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">github_banner:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">permalink:</span> <span class="string">https://github.com/codefishyyf</span></span><br><span class="line">  <span class="attr">title:</span> <span class="string">Follow</span> <span class="string">me</span> <span class="string">on</span> <span class="string">GitHub</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="7-设置阅读进度百分比显示"><a href="#7-设置阅读进度百分比显示" class="headerlink" title="7.设置阅读进度百分比显示"></a>7.设置阅读进度百分比显示</h1><p>在博客配置文件下，修改back2top中的参数如下所示：</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">back2top:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">sidebar:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">scrollpercent:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="8-设置阅读位置标记功能"><a href="#8-设置阅读位置标记功能" class="headerlink" title="8.设置阅读位置标记功能"></a>8.设置阅读位置标记功能</h1><p>在主题配置文件下，设置如下：</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">bookmark:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="comment"># Customize the color of the bookmark.</span></span><br><span class="line">  <span class="attr">color:</span> <span class="string">&quot;#222&quot;</span></span><br><span class="line">  <span class="comment"># If auto, save the reading progress when closing the page or clicking the bookmark-icon.</span></span><br><span class="line">  <span class="comment"># If manual, only save it by clicking the bookmark-icon.</span></span><br><span class="line">  <span class="attr">save:</span> <span class="string">auto</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="9-设置统计字数和阅读时间的估计"><a href="#9-设置统计字数和阅读时间的估计" class="headerlink" title="9.设置统计字数和阅读时间的估计"></a>9.设置统计字数和阅读时间的估计</h1><p>在主题配置文件下，设置如下：</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">symbols_count_time:</span></span><br><span class="line">  <span class="attr">separated_meta:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">item_text_post:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">item_text_total:</span> <span class="literal">false</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="10-添加文章分享按钮"><a href="#10-添加文章分享按钮" class="headerlink" title="10.添加文章分享按钮"></a>10.添加文章分享按钮</h1><p>第一步：在next主题下的source/lib中安装needmoreshare2模块</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="string">git</span> <span class="string">clone</span> <span class="string">https://github.com/theme-next/theme-next-needmoreshare2</span> <span class="string">source/lib/needsharebutton</span></span><br></pre></td></tr></table></figure>
+
+<p>第二步：在主题配置文件中添加如下代码：</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="comment">#添加文章分享按钮模块</span></span><br><span class="line"><span class="attr">needmoreshare2:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">postbottom:</span></span><br><span class="line">    <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">    <span class="attr">options:</span></span><br><span class="line">      <span class="attr">iconStyle:</span> <span class="string">default</span></span><br><span class="line">      <span class="attr">boxForm:</span> <span class="string">horizontal</span></span><br><span class="line">      <span class="attr">position:</span> <span class="string">bottomCenter</span></span><br><span class="line">      <span class="attr">networks:</span> <span class="string">Weibo,Wechat,Douban,QQZone</span></span><br><span class="line">  <span class="attr">float:</span></span><br><span class="line">    <span class="attr">enable:</span> <span class="literal">false</span></span><br><span class="line">    <span class="attr">options:</span></span><br><span class="line">      <span class="attr">iconStyle:</span> <span class="string">default</span></span><br><span class="line">      <span class="attr">boxForm:</span> <span class="string">horizontal</span></span><br><span class="line">      <span class="attr">position:</span> <span class="string">middleRight</span></span><br><span class="line">      <span class="attr">networks:</span> <span class="string">Weibo,Wechat,Douban,QQZone</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="11-添加自定义404页面"><a href="#11-添加自定义404页面" class="headerlink" title="11.添加自定义404页面"></a>11.添加自定义404页面</h1><figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="string">暂时还没完成</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="12图片放大预览功能"><a href="#12图片放大预览功能" class="headerlink" title="12图片放大预览功能"></a>12图片放大预览功能</h1><p>在主题配置文件下启动fancybox</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="string">fancybox:true</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="13图片懒加载"><a href="#13图片懒加载" class="headerlink" title="13图片懒加载"></a>13图片懒加载</h1><figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">lazyload:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="14点击出现桃心效果"><a href="#14点击出现桃心效果" class="headerlink" title="14点击出现桃心效果"></a>14点击出现桃心效果</h1><figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="string">暂时还没完成</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="15标签云效果"><a href="#15标签云效果" class="headerlink" title="15标签云效果"></a>15标签云效果</h1><figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="string">暂时还没完成</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="16设置代码块复制和代码高亮"><a href="#16设置代码块复制和代码高亮" class="headerlink" title="16设置代码块复制和代码高亮"></a>16设置代码块复制和代码高亮</h1><p>在主题配置文件中修改codeblock</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">codeblock:</span></span><br><span class="line">  <span class="attr">highlight_theme:</span> <span class="string">normal</span></span><br><span class="line">  <span class="attr">copy_button:</span></span><br><span class="line">    <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">    <span class="attr">show_result:</span> <span class="literal">true</span></span><br><span class="line">    <span class="attr">style:</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="17修改文章底部标签样式"><a href="#17修改文章底部标签样式" class="headerlink" title="17修改文章底部标签样式"></a>17修改文章底部标签样式</h1><figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="string">tag_icon:true</span></span><br></pre></td></tr></table></figure>
+
+
+
+]]></content>
+      <categories>
+        <category>博客搭建</category>
+      </categories>
+      <tags>
+        <tag>next</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>版本控制SVN</title>
+    <url>/2021/06/29/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6SVN/</url>
+    <content><![CDATA[<p><escape><span id="more"></span></escape></p>
+]]></content>
+      <categories>
+        <category>版本控制</category>
+      </categories>
+      <tags>
+        <tag>SVN</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>第一章:设计模式相关内容介绍</title>
     <url>/2021/06/29/%E7%AC%AC%E4%B8%80%E7%AB%A0%EF%BC%9A%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E7%9B%B8%E5%85%B3%E5%86%85%E5%AE%B9%E4%BB%8B%E7%BB%8D/</url>
     <content><![CDATA[<p><escape><span id="more"></span></escape></p>
-]]></content>
+<h1 id="一、设计模式概述"><a href="#一、设计模式概述" class="headerlink" title="一、设计模式概述"></a>一、设计模式概述</h1><h2 id="1、软件设计模式产生背景"><a href="#1、软件设计模式产生背景" class="headerlink" title="1、软件设计模式产生背景"></a>1、软件设计模式产生背景</h2><p>软件设计模式来自于建筑领域的设计。</p>
+<h2 id="2、软件设计模式概念"><a href="#2、软件设计模式概念" class="headerlink" title="2、软件设计模式概念"></a>2、软件设计模式概念</h2><p>设计模式：<strong>它描述了在软件设计过程中的一些不断重复发生的问题，以及该问题的解决方案</strong>。也就是说，设计模式是解决特定问题的一系列套路，是前辈们的代码设计经验的总结，具有一定的普遍性，可反复使用。</p>
+<h2 id="3、学习设计模式的必要性"><a href="#3、学习设计模式的必要性" class="headerlink" title="3、学习设计模式的必要性"></a>3、学习设计模式的必要性</h2><p>设计模式的本质是面向对象设计原则的实际运用，是对类的封装、继承、多态以及类的关联关系和组合关系的充分理解。</p>
+<p>正确使用设计模式具有的优点：</p>
+<ul>
+<li>可以提高程序员的思维能力，编程能力和设计能力</li>
+<li>使程序设计更加标准化，代码编制更加工程化，使软件开发效率大大提高，从而缩短软件的开发周期</li>
+<li>使设计的代码可重用性高，可读性强、可靠性高、灵活性好，可维护性强</li>
+</ul>
+<h2 id="4、设计模式分类"><a href="#4、设计模式分类" class="headerlink" title="4、设计模式分类"></a>4、设计模式分类</h2><ul>
+<li><p><strong>创建型模式</strong></p>
+<p>作用：用于描述“<strong>怎样创建对象</strong>”</p>
+<p>特点：<strong>将对象的创建与使用分离</strong></p>
+<p>具体模式：<strong>单例模式</strong>、<strong>原型模式</strong>、<strong>工厂方法模式</strong>、<strong>抽象工厂模式</strong>、<strong>建造者模式</strong></p>
+</li>
+<li><p><strong>结合型模式</strong></p>
+<p>作用：用于描述“<strong>如何将类或对象按某种布局组成更大的结构</strong>”</p>
+<p>具体模式：<strong>代理模式</strong>、<strong>适配器模式</strong>、<strong>桥接模式</strong>、<strong>装饰模式</strong>、<strong>外观模式</strong>、<strong>享元模式</strong>、<strong>组合模式</strong></p>
+</li>
+<li><p><strong>行为型模式</strong></p>
+<p>作用：用于描述“<strong>类或对象之间怎样相互协作共同完成单个对象无法单独完成的任务，以及怎样分配职责</strong>”</p>
+<p>具体模式：<strong>模板方法模式</strong>、<strong>策略模式</strong>、<strong>命令模式</strong>、<strong>职责链模式</strong>、<strong>状态模式</strong>、<strong>观察者模式</strong>、<strong>中介者模式</strong>、<strong>迭代器模式</strong>、<strong>访问者模式</strong>、<strong>备忘录模式</strong>、<strong>解释器模式</strong></p>
+</li>
+</ul>
+<h1 id="二、UML类图"><a href="#二、UML类图" class="headerlink" title="二、UML类图"></a>二、UML类图</h1><p>统一建模语言（Unified  Modeling  Language,UML）是用来设计软件的可视化建模语言，它的特点是简单、统一、图形化、能表达软件设计中的动态与静态信息。</p>
+<p>图分为9种：</p>
+<p>用例图、类图、对象图、状态图、时序图、活动图、协作图、构件图、部署图。</p>
+<h2 id="1、类图概述"><a href="#1、类图概述" class="headerlink" title="1、类图概述"></a>1、类图概述</h2><p>类图是显示了模型的静态结构。特别是模型中存在的类，类的内部结构以及他们与其它类的关系等。类图不显示暂时性的信息。类图是面向对象建模的主要组成部分。</p>
+<h2 id="2、类图的作用"><a href="#2、类图的作用" class="headerlink" title="2、类图的作用"></a>2、类图的作用</h2><ul>
+<li>在软件工程中，类图是一种静态的结构图，描述了系统的类的集合，类的属性和类之间的关系，可以简化人们对系统的理解。</li>
+<li>类图是系统分析和设计阶段的重要产物，是系统编码和测试的重要模型。</li>
+</ul>
+<h2 id="3、类图的表示法"><a href="#3、类图的表示法" class="headerlink" title="3、类图的表示法"></a>3、类图的表示法</h2><h3 id="3-1、类图表示方式"><a href="#3-1、类图表示方式" class="headerlink" title="3.1、类图表示方式"></a>3.1、类图表示方式</h3><p>在UML 类图中，类使用包含类名、属性（Field）和方法（method）且带有分割线的矩形来表示，比如下图表示一个Employee类，它包含name,age和address这3个属性，以及work()方法。</p>
+<p><img data-src="../images/image-20210701103227890.png"></p>
+<p>属性、方法名之前的+、-号表示这个属性、方法的可见性，UML类图中表示可见性的符号有三种：</p>
+<ul>
+<li><p><strong>+<strong>：表示</strong>public</strong></p>
+</li>
+<li><p><strong>-<strong>：表示</strong>private</strong></p>
+</li>
+<li><p><strong>#<strong>：表示</strong>protected</strong></p>
+</li>
+</ul>
+<p>属性的完整表示方式是：<strong>可见性  名称   ：类型  【=缺省值】</strong></p>
+<p>方法的完整表示方式是：<strong>可见性  名称(参数列表) 【：返回类型】</strong></p>
+<h2 id="4、类与类之间关系的表示方式"><a href="#4、类与类之间关系的表示方式" class="headerlink" title="4、类与类之间关系的表示方式"></a>4、类与类之间关系的表示方式</h2><h3 id="4-1、关联关系"><a href="#4-1、关联关系" class="headerlink" title="4.1、关联关系"></a>4.1、关联关系</h3><p><strong>关联关系</strong>：关联关系是对象之间的一种<strong>引用关系</strong>，用于表示一类对象与另一类对象之间的联系。</p>
+<p>分为：<strong>一般关联关系、聚合关联、组合关联</strong></p>
+<p>又分为：<strong>单向关联</strong>、<strong>双向关联</strong>、<strong>自关联</strong>。</p>
+<h4 id="1、单向关联"><a href="#1、单向关联" class="headerlink" title="1、单向关联"></a>1、单向关联</h4><img data-src="../images/image-20210701104936638.png" style="zoom: 67%;" />
+
+<p>单向关联：用一个带箭头的实线表示，上图表示每个顾客都有地址，这通过让Customer类持有一个类型为address的成员变量类实现。</p>
+<h4 id="2、双向关联"><a href="#2、双向关联" class="headerlink" title="2、双向关联"></a>2、双向关联</h4><img data-src="../images/image-20210701105313503.png" style="zoom:67%;" />
+
+<p>双向关联：用一个不带箭头的实线表示。双方各自持有对象的成员变量。在Customer类中维护一个List<Product>，表示一个顾客可以购买多个商品；在Product类中维护一个Customer类型的成员变量表示这个产品被哪个顾客所购买。</p>
+<h4 id="3、自关联"><a href="#3、自关联" class="headerlink" title="3、自关联"></a>3、自关联</h4><p><img data-src="../images/image-20210701105628389.png"></p>
+<p>自关联：用一个带有箭头且指向自身的线表示。上图的意思是Node类包含类型为Node的成员变量，也就是自己包含自己。</p>
+<h3 id="4-2、聚合关系"><a href="#4-2、聚合关系" class="headerlink" title="4.2、聚合关系"></a>4.2、聚合关系</h3><p>聚合关系【强关联关系】：是整体与局部之间的关系。</p>
+<p>例如：学校和老师的关系，学校包含老师，但如果学校停办了，老师依然存在。</p>
+<p>聚合关系：用带空心菱形的实线来表示，菱形指向整体。</p>
+<img data-src="../images/image-20210701110240489.png" style="zoom:67%;" />
+
+<h3 id="4-3、组合关系"><a href="#4-3、组合关系" class="headerlink" title="4.3、组合关系"></a>4.3、组合关系</h3><p>组合关系【强烈的聚合关系】：表示类之间的整体与局部的关系。</p>
+<p>例如：头和嘴的关系，没有了头，嘴就不存在了。</p>
+<p>组合关系：用带实心得菱形的实线类表示，菱形指向整体。</p>
+<img data-src="../images/image-20210701110708718.png" style="zoom:67%;" />
+
+<h3 id="4-4、依赖关系"><a href="#4-4、依赖关系" class="headerlink" title="4.4、依赖关系"></a>4.4、依赖关系</h3><p>依赖关系【使用关系】：它是<strong>对象之间耦合度最低</strong>的一种关联关系。在代码中，某个类的方法通过局部变量、方法的参数或者对静态方法的调用来访问另一个类（被依赖类）中的某些方法来完成一些职责。</p>
+<p>例如：司机和汽车的关系，司机驾驶汽车。</p>
+<p>依赖关系：使用带箭头的虚线来表示，箭头从使用类指向被依赖的类</p>
+<p><img data-src="../images/image-20210701111506875.png"></p>
+<h3 id="4-5、继承关系"><a href="#4-5、继承关系" class="headerlink" title="4.5、继承关系"></a>4.5、继承关系</h3><p>继承关系：是<strong>对象之间耦合度最大</strong>的一种关系，表示一般与特殊的关系，是父类与子类之间的关系，是一种继承关系。</p>
+<p>例如：Student类和Teacher类都是Person类的子类</p>
+<p>继承关系：用带空心的三角箭头的实线来表示。</p>
+<img data-src="../images/image-20210701111858424.png" style="zoom:67%;" />
+
+<h3 id="4-6、实现关系"><a href="#4-6、实现关系" class="headerlink" title="4.6、实现关系"></a>4.6、实现关系</h3><p>实现关系：接口与实现类之间的关系。类实现了接口，类中的操作实现了接口中所声明的所有抽象操作。</p>
+<p>例如：汽车和船实现了交通工具。</p>
+<p>实现关系：使用带空心三角箭头的虚线来表示</p>
+<img data-src="../images/image-20210701112228836.png" style="zoom:67%;" />
+
+<h1 id="三、软件设计原则"><a href="#三、软件设计原则" class="headerlink" title="三、软件设计原则"></a>三、软件设计原则</h1><p>在软件开发中，为了提高软件系统的<strong>可维护性</strong>、<strong>可复用性</strong>、<strong>可扩展性</strong>、<strong>灵活性</strong>，程序员要尽量更加<strong>6</strong>条原则来进行开发，从而提高软件开发效率，节约软件开发成本和维护成本。</p>
+<h2 id="1、开闭原则"><a href="#1、开闭原则" class="headerlink" title="1、开闭原则"></a>1、开闭原则</h2><p><strong>对扩展开放，对修改关闭。</strong>在程序需要拓展的时候，不能去修改原有的代码，实现一个热插拨的效果。简言之，就是为了使程序的扩展性好，易于维护和升级。</p>
+<p><strong>想要达到这样的效果，我们需要使用接口和抽象类。</strong></p>
+<p>【例】<code>搜狗输入法</code>的皮肤是输入法背景图片、窗口颜色和声音元素的组合。用户可以更具自己的输入法的皮肤，也可以从网上下载新皮肤，这些皮肤有共同的特点，可以为其定义一个抽象类，而每个具体的皮肤是其子类。用户窗体可以更具需要选择或者增加新的主题，而不需要修改原代码，所以它是满足开闭原则的。</p>
+<p><img data-src="../images/image-20210701133429800.png"></p>
+<h2 id="2、里氏代换原则"><a href="#2、里氏代换原则" class="headerlink" title="2、里氏代换原则"></a>2、里氏代换原则</h2><h2 id="3、依赖倒转原则"><a href="#3、依赖倒转原则" class="headerlink" title="3、依赖倒转原则"></a>3、依赖倒转原则</h2><h2 id="4、接口隔离原则"><a href="#4、接口隔离原则" class="headerlink" title="4、接口隔离原则"></a>4、接口隔离原则</h2><h2 id="5、迪米特法则"><a href="#5、迪米特法则" class="headerlink" title="5、迪米特法则"></a>5、迪米特法则</h2><h2 id="6、合成复用原则"><a href="#6、合成复用原则" class="headerlink" title="6、合成复用原则"></a>6、合成复用原则</h2>]]></content>
       <categories>
         <category>设计模式</category>
       </categories>
@@ -765,7 +840,19 @@
     <title>第二章:创建者模式(5种)</title>
     <url>/2021/07/01/%E7%AC%AC%E4%BA%8C%E7%AB%A0-%E5%88%9B%E5%BB%BA%E8%80%85%E6%A8%A1%E5%BC%8F-5%E7%A7%8D/</url>
     <content><![CDATA[<p><escape><span id="more"></span></escape></p>
-]]></content>
+<h1 id="一、单例模式"><a href="#一、单例模式" class="headerlink" title="一、单例模式"></a>一、单例模式</h1><h1 id="二、原型模式"><a href="#二、原型模式" class="headerlink" title="二、原型模式"></a>二、原型模式</h1><h1 id="三、工厂方法模式"><a href="#三、工厂方法模式" class="headerlink" title="三、工厂方法模式"></a>三、工厂方法模式</h1><h1 id="四、抽象工厂模式"><a href="#四、抽象工厂模式" class="headerlink" title="四、抽象工厂模式"></a>四、抽象工厂模式</h1><h1 id="五、建造者模式"><a href="#五、建造者模式" class="headerlink" title="五、建造者模式"></a>五、建造者模式</h1>]]></content>
+      <categories>
+        <category>设计模式</category>
+      </categories>
+      <tags>
+        <tag>设计模式</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第三章:结构型模式(7种)</title>
+    <url>/2021/07/01/%E7%AC%AC%E4%B8%89%E7%AB%A0-%E7%BB%93%E6%9E%84%E5%9E%8B%E6%A8%A1%E5%BC%8F-7%E7%A7%8D/</url>
+    <content><![CDATA[<p><escape><span id="more"></span></escape></p>
+<h1 id="一、代理模式"><a href="#一、代理模式" class="headerlink" title="一、代理模式"></a>一、代理模式</h1><h1 id="二、适配器模式"><a href="#二、适配器模式" class="headerlink" title="二、适配器模式"></a>二、适配器模式</h1><h1 id="三、桥接模式"><a href="#三、桥接模式" class="headerlink" title="三、桥接模式"></a>三、桥接模式</h1><h1 id="四、装饰者模式"><a href="#四、装饰者模式" class="headerlink" title="四、装饰者模式"></a>四、装饰者模式</h1><h1 id="五、外观模式"><a href="#五、外观模式" class="headerlink" title="五、外观模式"></a>五、外观模式</h1><h1 id="六、享元模式"><a href="#六、享元模式" class="headerlink" title="六、享元模式"></a>六、享元模式</h1><h1 id="七、组合模式"><a href="#七、组合模式" class="headerlink" title="七、组合模式"></a>七、组合模式</h1>]]></content>
       <categories>
         <category>设计模式</category>
       </categories>
@@ -777,7 +864,7 @@
     <title>第五章:综合练习</title>
     <url>/2021/07/01/%E7%AC%AC%E4%BA%94%E7%AB%A0-%E7%BB%BC%E5%90%88%E7%BB%83%E4%B9%A0/</url>
     <content><![CDATA[<p><escape><span id="more"></span></escape></p>
-]]></content>
+<h1 id="一、自定义Spring框架【IOC】"><a href="#一、自定义Spring框架【IOC】" class="headerlink" title="一、自定义Spring框架【IOC】"></a>一、自定义Spring框架【IOC】</h1><h2 id="1、分析spring核心功能结构"><a href="#1、分析spring核心功能结构" class="headerlink" title="1、分析spring核心功能结构"></a>1、分析spring核心功能结构</h2><h2 id="2、确定spring核心功能使用的设计模式"><a href="#2、确定spring核心功能使用的设计模式" class="headerlink" title="2、确定spring核心功能使用的设计模式"></a>2、确定spring核心功能使用的设计模式</h2><h2 id="3、功能实现"><a href="#3、功能实现" class="headerlink" title="3、功能实现"></a>3、功能实现</h2>]]></content>
       <categories>
         <category>设计模式</category>
       </categories>
@@ -789,7 +876,7 @@
     <title>第四章:行为型模式(11种)</title>
     <url>/2021/07/01/%E7%AC%AC%E5%9B%9B%E7%AB%A0-%E8%A1%8C%E4%B8%BA%E5%9E%8B%E6%A8%A1%E5%BC%8F-11%E7%A7%8D/</url>
     <content><![CDATA[<p><escape><span id="more"></span></escape></p>
-]]></content>
+<h1 id="一、模板方法模式"><a href="#一、模板方法模式" class="headerlink" title="一、模板方法模式"></a>一、模板方法模式</h1><h1 id="二、策略模式"><a href="#二、策略模式" class="headerlink" title="二、策略模式"></a>二、策略模式</h1><h1 id="三、命令模式"><a href="#三、命令模式" class="headerlink" title="三、命令模式"></a>三、命令模式</h1><h1 id="四、职责链模式"><a href="#四、职责链模式" class="headerlink" title="四、职责链模式"></a>四、职责链模式</h1><h1 id="五、状态模式"><a href="#五、状态模式" class="headerlink" title="五、状态模式"></a>五、状态模式</h1><h1 id="六、观察者模式"><a href="#六、观察者模式" class="headerlink" title="六、观察者模式"></a>六、观察者模式</h1><h1 id="七、中介者模式"><a href="#七、中介者模式" class="headerlink" title="七、中介者模式"></a>七、中介者模式</h1><h1 id="八、迭代器模式"><a href="#八、迭代器模式" class="headerlink" title="八、迭代器模式"></a>八、迭代器模式</h1><h1 id="九、访问者模式"><a href="#九、访问者模式" class="headerlink" title="九、访问者模式"></a>九、访问者模式</h1><h1 id="十、备忘录模式"><a href="#十、备忘录模式" class="headerlink" title="十、备忘录模式"></a>十、备忘录模式</h1><h1 id="十一、解释器模式"><a href="#十一、解释器模式" class="headerlink" title="十一、解释器模式"></a>十一、解释器模式</h1>]]></content>
       <categories>
         <category>设计模式</category>
       </categories>
